@@ -6,8 +6,19 @@
     font-family:"ID Grotesk Trial Bold";
     src: url("../fonts/IDGroteskTrial-Bold.ttf") format("truetype");
 }
-
+@font-face {
+    font-family:"Montserrat Bold";
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Montserrat Regular";
+    src: url("../fonts/IDGroteskTrial-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:"Roboto Bold";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
 h1 {
-    font-family: "ID Grotesk Trial Bold";
+    font-family: "Roboto bold";
     font-size: 2em;
 }
