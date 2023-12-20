@@ -1,0 +1,13 @@
+@font-face {
+    font-family:"ID Grotesk Trial";
+    src: url("../fonts/IDGroteskTrial-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family:"ID Grotesk Trial Bold";
+    src: url("../fonts/IDGroteskTrial-Bold.ttf") format("truetype");
+}
+
+h1 {
+    font-family: "ID Grotesk Trial Bold";
+    font-size: 2em;
+}
