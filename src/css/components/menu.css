@@ -1,3 +1,8 @@
+.noscroll,
+.noscroll body {
+    overflow: hidden;
+}
+
 .menu {
     position: fixed;
     top: 0;
@@ -18,7 +23,7 @@
 }
 
 .lien_menu {
-    font-size: 24px;
+
     text-decoration: none;
     list-style: none;
     font-family: "ID Grotesk Trial";
@@ -26,14 +31,24 @@
 
 .liste_menu {
     list-style: none;
-    
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
-.lien_menu_secondaire {
-    font-size: 14px;
+.liste_menu_secondaire {
+
     text-decoration: none;
     list-style: none;
     font-family: "ID Grotesk Trial";
+    color: var(--Gris-claire);
+    font-size: 14px;
+}
+
+.liste_menu_gris {
+    list-style: none;
+    margin-bottom: 18px;
+    font-size: 24px;
+    color: var(--Gris-claire);
 }
 
 .lien_menu_gris {
@@ -42,17 +57,43 @@
     text-decoration: none;
     list-style: none;
     font-family: "ID Grotesk Trial";
-    
 }
 
-.div_lien{
+.div_lien {
     text-align: center;
     margin-left: -3rem;
-    
+    padding-top: 5rem;
 }
 
-.div_lien_gris{
+.div_lien_gris {
     text-align: center;
     margin-left: -3rem;
-    
+}
+
+.div_lien_gris::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 70%;
+    background-color: var(--Gris-claire);
+    margin: 30px auto;
+}
+
+.menu_logo_orange {
+    width: 50px;
+    height: 50px;
+    bottom: 5px;
+    align-items: center;
+}
+
+.menu_div_logo {
+    display: flex;
+    justify-content: center;
+    margin-left: -3rem;
+    padding-top: 10px;
+}
+
+.menu_section {
+    margin-bottom: 40px;
+    max-width: 280px;
 }
