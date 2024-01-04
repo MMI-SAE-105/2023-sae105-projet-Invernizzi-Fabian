@@ -32,7 +32,7 @@
 .liste_menu {
     list-style: none;
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .liste_menu_secondaire {
@@ -47,12 +47,11 @@
 .liste_menu_gris {
     list-style: none;
     margin-bottom: 18px;
-    font-size: 24px;
     color: var(--Gris-claire);
 }
 
 .lien_menu_gris {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--Gris-claire);
     text-decoration: none;
     list-style: none;
@@ -80,8 +79,8 @@
 }
 
 .menu_logo_orange {
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
     bottom: 5px;
     align-items: center;
 }
@@ -94,6 +93,6 @@
 }
 
 .menu_section {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     max-width: 280px;
 }
