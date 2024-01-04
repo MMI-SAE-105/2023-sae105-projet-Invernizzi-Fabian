@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,13 +13,27 @@
 
   <header class="header_principal">
 
+
+
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms.origin.top class="menu">
+      <ul>
+        <li><a href="../index.html" class="lien_menu">Accueil</a></li>
+        <li><a href="../cats/index.html" class="lien_menu">Les Chats</a></li>
+        <li><a href="../dogs/index.html" class="lien_menu">Les Chiens</a></li>
+
+      </ul>
+    </nav>
     <nav class="header_nav">
 
       <h1 class="header_titre">OppenInsights</h1>
       <nav class="header_nav_secondaire">
         <p class="header_langue">FR</p>
-        <img class="header_burger" src="/public/img/Menu_header_footer/header/menu_burger_blanc.png" alt="">
+
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+          <img class="header_burger" src="/public/img/Menu_header_footer/header/menu_burger_blanc.png" alt="">
+        </button>
       </nav>
+
     </nav>
 
   </header>
@@ -119,8 +133,8 @@
     <div class="footer_source">
       <p class="footer_texte">Projet réalisé dans le cadre d’un exercice
         pédagogique au département <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a></p>
-      
-        <a href="https://butmmi.thomasjeu.fr/#/">
+
+      <a href="https://butmmi.thomasjeu.fr/#/">
         <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.png" alt="">
       </a>
     </div>
