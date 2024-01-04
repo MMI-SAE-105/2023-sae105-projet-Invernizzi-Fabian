@@ -41,33 +41,3 @@ img {
     height: auto;
 }
 
-/* alpine */
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: var(--Noir);
-    display: grid;
-    place-content: center;
-}
-
-.header_menuBtn {
-    position: relative;
-    z-index: 10;
-    background-color: transparent;
-    color: inherit;
-    border: none;
-}
-
-.lien_menu {
-    font-size: 40px;
-    line-height: 200%;
-    text-decoration: none;
-    list-style: none;
-}
-
-.liste_menu {
-    list-style: none;
-}

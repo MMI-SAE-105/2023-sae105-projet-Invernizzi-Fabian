@@ -3,6 +3,7 @@
 @import "/src/css/layout/header.css";
 @import "/src/css/layout/footer.css";
 @import "/src/css/base/main.css";
+@import "/src/css/components/menu.css";
 
 @font-face {
     font-family:"ID Grotesk Trial";

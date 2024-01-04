@@ -1,0 +1,58 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--Noir);
+    display: grid;
+    place-content: center;
+}
+
+.header_menuBtn {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+}
+
+.lien_menu {
+    font-size: 24px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ID Grotesk Trial";
+}
+
+.liste_menu {
+    list-style: none;
+    
+}
+
+.lien_menu_secondaire {
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ID Grotesk Trial";
+}
+
+.lien_menu_gris {
+    font-size: 24px;
+    color: var(--Gris-claire);
+    text-decoration: none;
+    list-style: none;
+    font-family: "ID Grotesk Trial";
+    
+}
+
+.div_lien{
+    text-align: center;
+    margin-left: -3rem;
+    
+}
+
+.div_lien_gris{
+    text-align: center;
+    margin-left: -3rem;
+    
+}
