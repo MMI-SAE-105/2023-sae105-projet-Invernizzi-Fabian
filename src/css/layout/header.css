@@ -1,13 +1,14 @@
 .header_principal {
     background: var(--Noir);
     color: var(--Blanc);
-    
+    width: 100%;
 }
 
 .header_titre {
     font-family: "Montserrat Bold";
-    font-size: 24px ;
+    font-size: 24px;
 }
+
 .header_burger {
     width: 43px;
     height: 43px;
@@ -17,14 +18,14 @@
     font-family: "ID Grotesk Trial";
     font-size: 20px;
     color: var(--Gris-claire);
-    
+
 }
 
 .header_nav {
     min-height: 10vh;
     display: flex;
     align-items: center;
-    padding : 5px 25px 5px 20px; 
+    padding: 5px 27px 5px 27px;
     justify-content: space-between;
 }
 

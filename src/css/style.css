@@ -1,6 +1,8 @@
 @import "/src/css/utils/variables.css";
 @import "/src/css/vendors/normalize.css";
 @import "/src/css/layout/header.css";
+@import "/src/css/layout/footer.css";
+@import "/src/css/base/main.css";
 
 @font-face {
     font-family:"ID Grotesk Trial";
