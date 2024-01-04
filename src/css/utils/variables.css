@@ -1,10 +1,10 @@
 :root {
   /* Color styles */
-  --primary: #F8B500;
-  --black: #2E3239;
-  --gray: #5C636E;
-  --white: #F7F7F7;
-  --light-gray: #898888;
+  --Orange: #F8B500;
+  --Noir: #2E3239;
+  --Gris: #5C636E;
+  --Blanc: #F7F7F7;
+  --Gris-claire: #898888;
 
   /* Text-size styles */
   /* base size: text--l-regular (16px) */

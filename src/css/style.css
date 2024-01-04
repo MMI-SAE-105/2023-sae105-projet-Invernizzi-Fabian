@@ -1,3 +1,7 @@
+@import "/src/css/utils/variables.css";
+@import "/src/css/vendors/normalize.css";
+@import "/src/css/layout/header.css";
+
 @font-face {
     font-family:"ID Grotesk Trial";
     src: url("../fonts/IDGroteskTrial-Regular.ttf") format("truetype");
@@ -18,7 +22,5 @@
     font-family:"Roboto Bold";
     src: url("../fonts/Roboto-Bold.ttf") format("truetype");
 }
-h1 {
-    font-family: "Roboto bold";
-    font-size: 2em;
-}
+
+
