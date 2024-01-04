@@ -76,3 +76,7 @@
     width: 66px;
     height: 47px;
 }
+
+.footer_liste_lien{
+    text-decoration: none;
+}

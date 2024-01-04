@@ -101,7 +101,7 @@
 .menu_titre{
     position: absolute;
     top: 3.5%; 
-    left: 6%;
+    left: 5%;
     font-size: var(--header3);
     line-height: 200%;
     color: var(--blanc);
