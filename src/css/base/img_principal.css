@@ -1,92 +1,91 @@
-.img_top_pages_a_propos{
-    background-image: url("/public/img/A_propos/image_top_a_propos.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_a_propos {
+    background-image: url("/public/img/A_propos/image_top_a_propos.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 30% 1rem 85% 1rem;
 }
 
-.img_top_pages_american_prometheus{
-    background-image: url("/public/img/American_prometheus/Image_top_american.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_american_prometheus {
+    background-image: url("/public/img/American_prometheus/Image_top_american.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 25% 1rem 77.5% 1rem;
 }
 
-.img_top_pages_autres_projets{
-    background-image: url("/public/img/Autres_projets/image_top_projets.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_autres_projets {
+    background-image: url("/public/img/Autres_projets/image_top_projets.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 25% 1rem 75.5% 1rem;
 }
 
-.img_top_pages_can_you_hear_the_music{
-    background-image: url("/public/img/Can_you_hear/image_top_music.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_can_you_hear_the_music {
+    background-image: url("/public/img/Can_you_hear/image_top_music.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 25% 1rem 75.5% 1rem;
 }
 
-.img_top_pages_christopher_nolan{
-    background-image: url("/public/img/Christopher_Nolan/image_top_nolan.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_christopher_nolan {
+    background-image: url("/public/img/Christopher_Nolan/image_top_nolan.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 30% 1rem 70% 1rem;
 }
 
-.img_top_pages_contact{
-    background-image: url("/public/img/Contact/image_top_contact.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_contact {
+    background-image: url("/public/img/Contact/image_top_contact.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 30% 1rem 85% 1rem;
 }
 
-.img_top_pages_filmographie{
-    background-image: url("/public/img/Filmographie/image_top_filmographie.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_filmographie {
+    background-image: url("/public/img/Filmographie/image_top_filmographie.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 30% 1rem 85% 1rem;
 }
 
-.img_top_pages_glossaire{
-    background-image: url("/public/img/Glossaire/image_top_glossaire.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_glossaire {
+    background-image: url("/public/img/Glossaire/image_top_glossaire.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 30% 1rem 85% 1rem;
 }
 
-.img_top_pages_index{
-    background-image: url("/public/img/Accueil/image_top_accueil.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_index {
+    background-image: url("/public/img/Accueil/image_top_accueil.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 15% 1rem 45% 1rem;
 }
 
-.img_top_pages_le_film{
-    background-image: url("/public/img/Le_film/image_top_film.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_le_film {
+    background-image: url("/public/img/Le_film/image_top_film.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 25% 1rem 77.5% 1rem;
 }
 
-.img_top_pages_livres_similaires{
-    background-image: url("/public/img/Livres_similaires/image_top_livre_similaire.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_livres_similaires {
+    background-image: url("/public/img/Livres_similaires/image_top_livre_similaire.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 28% 1rem 73.5% 1rem;
 }
 
-.img_top_pages_prise_de_conscience{
-    background-image: url("/public/img/Prise_de_conscience/image_top_conscience.webp"); /* Remplacez par l'URL de votre image */
-    background-position: center; /* Centre l'image */
+.img_top_pages_prise_de_conscience {
+    background-image: url("/public/img/Prise_de_conscience/image_top_conscience.webp");
+    background-position: center;
     background-size: 100% auto;
     padding: 20% 1rem 50% 1rem;
 }
 
-.titre_top_pages{
+.titre_top_pages {
     font-size: 48px;
     font-family: "ID Grotesk Trial Bold";
     color: var(--Blanc);
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
