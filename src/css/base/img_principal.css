@@ -1,0 +1,91 @@
+.img_top_pages_a_propos{
+    background-image: url("/public/img/A_propos/image_top_a_propos.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_amercian_prometheus{
+    background-image: url("/public/img/American_prometheus/Image_top_american.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_autres_projets{
+    background-image: url("/public/img/Autres_projets/image_top_projets.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_can_you_hear_the_music{
+    background-image: url("/public/img/Can_you_hear/image_top_music.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_christopher_nolan{
+    background-image: url("/public/img/Christopher_Nolan/image_top_nolan.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_contact{
+    background-image: url("/public/img/Contact/image_top_contact.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_filmographie{
+    background-image: url("/public/img/Filmographie/image_top_filmographie.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_glossaire{
+    background-image: url("/public/img/Glossaire/image_top_glossaire.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_index{
+    background-image: url("/public/img/Accueil/image_top_accueil.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_le_film{
+    background-image: url("/public/img/Le_film/image_top_film.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_livres_similaires{
+    background-image: url("/public/img/Livres_similaires/image_top_livre_similaire.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.img_top_pages_prise_de_conscience{
+    background-image: url("/public/img/Prise_de_conscience/image_top_conscience.webp"); /* Remplacez par l'URL de votre image */
+    background-position: center; /* Centre l'image */
+    background-size: 100% auto;
+    padding: 9rem 1rem 20rem 1rem;
+}
+
+.titre_top_pages{
+    font-size: 58px;
+    font-family: "ID Grotesk Trial Bold";
+    color: var(--Blanc);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
