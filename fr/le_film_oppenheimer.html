@@ -10,9 +10,63 @@
 </head>
 
 <body>
-    <header>
+    
+    <header class="header_principal">
 
-    </header>
+
+
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
+          <ul class="no_space">
+            <div class="div_lien">
+              <section class="menu_section">
+                <li class="liste_menu"><a href="/fr/le_film_oppenheimer.html" class="lien_menu">Le film Oppenheimer</a></li>
+              </section>
+              <section class="menu_section">
+                <li class="liste_menu"><a href="/fr/prise_de_conscience.html" class="lien_menu">Prise de conscience de J.
+                    Robert
+                    Oppenheimer</a></li>
+              </section class="menu_section">
+              <section class="menu_section">
+                <li class="liste_menu"><a href="/fr/american_prometheus.html" class="lien_menu">American Prometheus</a></li>
+                <li class="liste_menu_secondaire"><a href="/fr/livres_similaires.html" class="lien_menu">Livres
+                    similaires</a></li>
+              </section>
+              <section class="menu_section">
+                <li class="liste_menu"><a href="/fr/christopher_nolan.html" class="lien_menu">Christopher Nolan</a></li>
+                <li class="liste_menu_secondaire"><a href="/fr/filmographie.html" class="lien_menu">Filmographie</a></li>
+              </section>
+              <section class="menu_section">
+                <li class="liste_menu"><a href="/fr/can_you_hear_the_music.html" class="lien_menu">Can You Hear The
+                    Music</a></li>
+              </section>
+            </div>
+    
+            <div class="div_lien_gris">
+              <li class="liste_menu_gris"><a href="/fr/autres_projets.html" class="lien_menu_gris">Autres projets</a></li>
+            </div>
+    
+            <a href="/fr/index.html">
+              <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.png" alt="">
+            </a>
+    
+            <li class="menu_titre"><a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a></li>
+    
+          </ul>
+        </nav>
+        <nav class="header_nav">
+    
+          <h1 class="header_titre">OppenInsights</h1>
+          <nav class="header_nav_secondaire">
+            <p class="header_langue">FR</p>
+    
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+              <img class="header_burger" src="/public/img/Menu_header_footer/header/menu_burger_blanc.png" alt="">
+            </button>
+          </nav>
+    
+        </nav>
+    
+      </header>
 
     <main>
 
