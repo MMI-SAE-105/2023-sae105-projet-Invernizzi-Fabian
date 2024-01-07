@@ -1,3 +1,7 @@
+*{
+    
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -17,11 +21,14 @@ img {
 
 /* Accueil */
 
+/* Contenus Noir */
+
 .index_text_article_noir {
+    z-index: 4;
     width: 69%;
     background: var(--Noir);
     position: relative;
-    left: 7%;
+    left: 7.5%;
     padding: 2% 8% 4% 8%;
     border-radius: 25px 25px 0px 0px;
 }
@@ -45,6 +52,23 @@ img {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+.article_noir {
+    position: relative;
+    z-index: 1;
+}
+
+.bouton_article_noir {
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12.5px 25px 12.5px 25px;
+    position: absolute;
+    right: 6%;
+    top: 85%;
+}
+/* Contenus Blanc */
 
 .index_text_article_blanc {
     width: 69%;
@@ -78,14 +102,7 @@ img {
     width: 85%;
     height: auto;
     position: relative;
-    left: 7%;
+    left: 7.5%;
     top: -2px;
-}
-
-.article_index_noir {
-
-}
-
-.article_index_blanc {
-
+    
 }

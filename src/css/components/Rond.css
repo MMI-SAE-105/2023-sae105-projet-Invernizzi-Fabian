@@ -8,37 +8,49 @@
 }
 
 .rond_orange_1 {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     background: var(--Orange);
     border-radius: 9999px;
     position: relative;
-    left: 68%;
+    left: -1%;
+    top: 60px;
 }
 
 .rond_orange_2 {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     background: var(--Orange);
     border-radius: 9999px;
     position: relative;
-    left: 68%;
+    left: 51%;
+    top: -25px;
 }
 
 .rond_orange_3 {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     background: var(--Orange);
     border-radius: 9999px;
     position: relative;
-    left: 68%;
+    left: 50%;
+    top: 50%;
 }
 
 .rond_orange_4 {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
     background: var(--Orange);
     border-radius: 9999px;
     position: relative;
-    left: 68%;
+    left: 10%;
+    top: 75%;
+}
+
+.rond_orange_1,
+.rond_orange_2,
+.rond_orange_3,
+.rond_orange_4 {
+    position: absolute;
+    z-index: 0;
 }
