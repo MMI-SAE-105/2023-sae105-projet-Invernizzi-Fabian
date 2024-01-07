@@ -4,9 +4,11 @@
     background: var(--Orange);
     border-radius: 100% 0% 47% 53% / 100% 100% 0% 0%;
     position: relative;
-    left: 68%;
+    left: 69.2%;
 }
 
+/*Accueil*/
+/*Contenus Noir*/
 .rond_orange_1 {
     width: 180px;
     height: 180px;
@@ -51,6 +53,56 @@
 .rond_orange_2,
 .rond_orange_3,
 .rond_orange_4 {
+    position: absolute;
+    z-index: 0;
+}
+
+/*Contenus Blanc*/
+
+.rond_orange_5 {
+    width: 180px;
+    height: 180px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 51%;
+    top: 60px;
+}
+
+.rond_orange_6 {
+    width: 180px;
+    height: 180px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 1%;
+    top: -25px;
+}
+
+.rond_orange_7 {
+    width: 180px;
+    height: 180px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 2%;
+    top: 50%;
+}
+
+.rond_orange_8 {
+    width: 180px;
+    height: 180px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 50%;
+    top: 75%;
+}
+
+.rond_orange_5,
+.rond_orange_6,
+.rond_orange_7,
+.rond_orange_8 {
     position: absolute;
     z-index: 0;
 }

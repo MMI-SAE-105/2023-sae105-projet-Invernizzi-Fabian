@@ -12,8 +12,8 @@
     height: 10px;
     background: var(--Noir);
     border-radius: 0% 9999px 9999px 0%;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 18%;
+    margin-bottom: 18%;
 }
 
 .accueil_noir_droite {
@@ -21,8 +21,8 @@
     height: 10px;
     background: var(--Noir);
     border-radius: 9999px 0% 0% 9999px;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 18%;
+    margin-bottom: 18%;
     position: relative;
     left: 55%;
 }
