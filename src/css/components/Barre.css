@@ -2,7 +2,7 @@
 
 .accueil_orange_gauche {
     width: 50%;
-    height: 10px;
+    height: 12px;
     background: var(--Orange);
     border-radius: 0% 9999px 9999px 0%;
     margin-top: 40px;
@@ -11,7 +11,7 @@
 
 .accueil_orange_droite {
     width: 50%;
-    height: 10px;
+    height: 12px;
     background: var(--Orange);
     border-radius: 9999px 0% 0% 9999px;
     position: relative;
@@ -22,7 +22,7 @@
 
 .accueil_noir_gauche {
     width: 45%;
-    height: 10px;
+    height: 12px;
     background: var(--Noir);
     border-radius: 0% 9999px 9999px 0%;
     margin-top: 15%;
@@ -31,7 +31,7 @@
 
 .accueil_noir_droite {
     width: 45%;
-    height: 10px;
+    height: 12px;
     background: var(--Noir);
     border-radius: 9999px 0% 0% 9999px;
     margin-top: 15%;

@@ -3,6 +3,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    overflow-x: hidden; /* Ajoute cette ligne */
+}
+
 img {
     width: 100%;
     height: auto;
@@ -61,6 +65,13 @@ img {
     padding: 2% 5% 2% 5%;
 }
 
+.sous_titre_centré{
+    font-family: "Montserrat Bold";
+    font-size: 20px;
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+}
+
 .légende_img {
     font-family: "Montserrat Regular";
     font-size: 12px;
@@ -73,6 +84,22 @@ iframe {
     aspect-ratio: 16/9;
 }
 
+.frise{
+    position: absolute;
+    width: 41px;
+    left: -0.5vh;
+    margin-top: 1.5vh;
+    
+}
+
+.frise_titre{
+    font-family: "Montserrat Regular";
+    font-size: 20px;
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+    margin-top: 8px ;
+    margin-bottom: 8px ;
+}
 /* Accueil */
 
 /* Contenus Noir */
@@ -148,6 +175,42 @@ iframe {
 
 
 /* Contenus Blanc */
+
+.bloc_blanc {
+    z-index: 1;
+    position: relative;
+    background: #F7F7F7;
+    margin: 20px 1px 60px 15px;
+    padding: 8px 15px 10px 15px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    max-width: 85%;
+}
+
+.bloc_blanc_frise {
+    z-index: 1;
+    position: relative;
+    background: #F7F7F7;
+    margin: 20px 15px 40px 40px;
+    padding: 0px 0px 10px 0px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    max-width: 85%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.bloc_blanc_frise div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.bloc_blanc_frise img {
+    border-radius: 25px 25px 0px 0px;
+}
 
 .index_text_article_blanc {
     width: 69%;
