@@ -55,7 +55,9 @@
     </nav>
     <nav class="header_nav">
 
-      <a href="/fr/index.html"><h1 class="header_titre">OppenInsights</h1></a>
+      <a href="/fr/index.html">
+        <h1 class="header_titre">OppenInsights</h1>
+      </a>
       <nav class="header_nav_secondaire">
         <p class="header_langue">FR</p>
 
@@ -72,34 +74,45 @@
     <div class="img_top_pages_contact">
       <h1 class="titre_top_pages">Contact</h1>
     </div>
-    <p>Publié le 25 / 10, par Fabian Invernizzi</p>
 
-    <p>
-      <label for="prenom">Prénom</label><br>
-      <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom ici">
+    <div class="rond_orange_contact1"></div>
+
+    <p class="text_date_durée">Publié le 25 / 10, par Fabian Invernizzi</p>
+
+    <p class="bloc_contact">
+      <label class="titre_contact" for="prenom">Prénom</label><br>
+      <input class="case_contact" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom ici">
     </p>
 
     <p>
-      <label for="nom">Nom</label><br>
-      <input type="text" id="nom" name="nom" placeholder="Entrez votre nom ici">
+      <label class="titre_contact" for="nom">Nom</label><br>
+      <input class="case_contact" type="text" id="nom" name="nom" placeholder="Entrez votre nom ici">
+    </p>
+
+    <div class="rond_orange_contact2"></div>
+
+    <p>
+      <label class="titre_contact" for="adresse_e-mail">Adresse e-mail:</label><br>
+      <input class="case_contact" type="text" id="adresse_e-mail" name="adresse_e-mail"
+        placeholder="Entrez votre e-mail ici">
     </p>
 
     <p>
-      <label for="adresse_e-mail">Adresse e-mail:</label><br>
-      <input type="text" id="adresse_e-mail" name="adresse_e-mail" placeholder="Entrez votre e-mail ici">
+      <label class="titre_contact" for="objet">Objet</label><br>
+      <input class="case_contact" type="text" id="objet" name="objet" placeholder="Entrez l'objet du message ici">
     </p>
+
+    <div class="rond_orange_contact3"></div>
 
     <p>
-      <label for="objet">Objet</label><br>
-      <input type="text" id="objet" name="objet" placeholder="Entrez l'objet du message ici">
+      <label class="titre_contact" for="message">Message</label><br>
+      <input class="case_contact_message" type="text" id="message" name="message"
+        placeholder="Entrez votre message ici">
     </p>
 
-    <p>
-      <label for="message">Message</label><br>
-      <input type="text" id="message" name="message" placeholder="Entrez votre message ici">
-    </p>
-
-    <button>Envoyer </button>
+    <div class="bloc_bouton">
+      <button class="bouton_noir">Envoyer </button>
+    </div>
 
     <div class="footer_rond_orange"></div>
 

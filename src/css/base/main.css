@@ -85,10 +85,11 @@ iframe {
 }
 
 .frise{
+    z-index: -1;
     position: absolute;
-    width: 41px;
+    width: 40px;
     left: -0.5vh;
-    margin-top: 1.5vh;
+    margin-top: 20vh;
     
 }
 
@@ -188,8 +189,8 @@ iframe {
 }
 
 .bloc_blanc_frise {
-    z-index: 1;
-    position: relative;
+    
+    
     background: #F7F7F7;
     margin: 20px 15px 40px 40px;
     padding: 0px 0px 10px 0px;
@@ -303,4 +304,36 @@ iframe {
     position: relative;
     left: 7.5%;
     top: -2px;
+}
+
+/* Contact */
+
+.titre_contact{
+    z-index: 1;
+    position: relative;
+    font-family: "ID Grotesk Trial";
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.case_contact{
+    z-index: 1;
+    position: relative;
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 12px;
+    border: 0.1px solid black;
+}
+
+.case_contact_message{
+    z-index: 1;
+    position: relative;
+    width: 80%;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding: 15px 15px 100px 15px;
+    border-radius: 12px;
+    border: 0.1px solid black;
 }

@@ -117,3 +117,42 @@
     position: absolute;
     margin-top: -5px;
 }
+
+/*Contact*/
+
+.rond_orange_contact1 {
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: absolute;
+    left: -20px;
+    margin: -30px;
+    
+}
+
+.rond_orange_contact2 {
+    z-index: -1;
+    width: 70px;
+    height: 150px;
+    background: var(--Orange);
+    border-radius: 100% 0% 0% 100% / 52% 1% 99% 48% ;
+    position: absolute;
+    right: 0;
+    margin-top: -50px;
+    
+}
+
+.rond_orange_contact3 {
+    z-index: -1;
+    width: 75px;
+    height: 150px;
+    background: var(--Orange);
+    border-radius: 0% 100% 100% 0% / 52% 50% 50% 48% ;
+    position: absolute;
+    left: 0;
+    margin-top: -50px;
+}
+
+ 
