@@ -111,9 +111,9 @@
 .rond_orange_intro_pages {
     z-index: -1;
     width: 270px;
-    height: 95px;
+    height: 110px;
     background: var(--Orange);
-    border-radius: 0% 100% 32% 68% / 100% 0% 100% 0%;
+    border-radius: 0% 100% 65% 35% / 74% 0% 100% 26%  ;
     position: absolute;
     margin-top: -5px;
 }
