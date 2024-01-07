@@ -123,7 +123,7 @@ img {
     position: relative;
     display: flex; 
     justify-content: center; 
-    
+    margin-top: 8%;
 }
 
 .bouton_noir{
