@@ -1,6 +1,4 @@
-*{
-
-}
+* {}
 
 a {
     color: inherit;
@@ -15,7 +13,7 @@ img {
     font-family: "Montserrat Regular";
     font-size: 10px;
     color: var(--Gris-claire);
-    margin-left: 3%;
+    margin-left: 4%;
     margin-top: 0.8%;
 }
 
@@ -26,12 +24,29 @@ img {
     padding: 5px 20px 5px 20px;
 }
 
-.accueil_intro{
+.accueil_intro {
     background: #F7F7F7;
     margin: 20px 15px 60px 15px;
-    padding: 10px 15px 10px 15px ;
+    padding: 10px 15px 10px 15px;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-    
+}
+
+.text_intro_pages_1l {
+    font-size: 20px;
+    font-family: "Id Grotesk Trial";
+    padding-left: 4%;
+    padding-bottom: 6%;
+    margin-bottom: 12%;
+}
+
+.text_intro_pages_2l {
+    font-size: 20px;
+    font-family: "Id Grotesk Trial";
+    padding-left: 4%;
+    margin-bottom: 10%;
+    max-width: 50%;
+    line-height: 1.3;
+    margin-top: -0.5%;
 }
 
 /* Accueil */
@@ -83,6 +98,7 @@ img {
     right: 6%;
     top: 83%;
 }
+
 /* Contenus Blanc */
 
 .index_text_article_blanc {
@@ -136,5 +152,5 @@ img {
     position: relative;
     left: 7.5%;
     top: -2px;
-    
+
 }
