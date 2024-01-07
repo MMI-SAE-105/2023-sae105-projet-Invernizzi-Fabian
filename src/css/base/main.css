@@ -258,6 +258,8 @@ iframe {
     top: 78%;
 }
 
+
+
 /* Contenus succès échecs */
 
 .bloc_succès_échecs {
@@ -336,4 +338,43 @@ iframe {
     padding: 15px 15px 100px 15px;
     border-radius: 12px;
     border: 0.1px solid black;
+}
+
+
+
+/* A propos */
+
+.sous_titre_basique_a_propos{
+    font-family: "Montserrat Bold";
+    font-size: 20px;
+    padding: 2% 5% 2% 5%;
+}
+
+.sous_titre_basique_a_propos2{
+    font-family: "Montserrat Bold";
+    font-size: 20px;
+    padding: 2% 5% 2% 5%;
+    left: 60%;
+    padding-top: 2.2vh;
+    max-width: 30%;
+    position: relative;
+}
+
+.bloc_a_propos{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+}
+
+.paragraphe_a_propos{
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    line-height: 1.4;
+    z-index: 1;
+    position: relative;
+    background: #F7F7F7;
+    margin: 30px 20px 35px 15px;
+    padding: 25px 5px 15px 25px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    max-width: 85%;
 }
