@@ -19,6 +19,21 @@ img {
     margin-top: 0.8%;
 }
 
+.accueil_sous_titre {
+    font-family: "Montserrat Bold";
+    font-size: 32px;
+    color: var(--Noir);
+    padding: 5px 20px 5px 20px;
+}
+
+.accueil_intro{
+    background: #F7F7F7;
+    margin: 20px 15px 60px 15px;
+    padding: 10px 15px 10px 15px ;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+    
+}
+
 /* Accueil */
 
 /* Contenus Noir */
