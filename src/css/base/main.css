@@ -7,6 +7,7 @@ a {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 .text_date_durée {
@@ -49,19 +50,20 @@ img {
     margin-top: -0.5%;
 }
 
-.paragraphe_basique{
+.paragraphe_basique {
     font-family: "Montserrat Regular";
     font-size: 14px;
     padding: 0% 5% 0% 5%;
+    line-height: 1.4;
 }
 
-.sous_titre_basique{
+.sous_titre_basique {
     font-family: "Montserrat Bold";
     font-size: 20px;
     padding: 2% 5% 2% 5%;
 }
 
-.légende_img{
+.légende_img {
     font-family: "Montserrat Regular";
     font-size: 12px;
     padding: 0% 5% 5% 5%;
@@ -119,17 +121,17 @@ img {
     top: 83%;
 }
 
-.bloc_bouton{
+.bloc_bouton {
     position: relative;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     margin-top: 8%;
 }
 
-.bouton_noir{
+.bouton_noir {
     font-family: "Roboto Bold";
     font-size: 14px;
-    background: var(--Noir); 
+    background: var(--Noir);
     color: var(--Blanc);
     border: none;
     border-radius: 20px;
@@ -139,6 +141,9 @@ img {
     line-height: 1.5;
     box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
 }
+
+
+
 
 /* Contenus Blanc */
 
@@ -181,11 +186,43 @@ img {
     background: white;
     border: none;
     border-radius: 50px;
-    padding: 12.5px 25px 12.5px 25px;
+    padding: 10px;
     position: absolute;
     right: 6%;
     top: 78%;
 }
+
+/* Contenus succès échecs */
+
+.bloc_succès_échecs {
+    z-index: 1;
+    position: relative;
+    background: #F7F7F7;
+    margin: 20px 1px 60px 15px;
+    padding: 8px 15px 10px 15px;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    max-width: 55%;
+}
+
+.bloc_interstellar {
+    z-index: 0;
+    position: relative;
+    width: 20%;
+}
+.bloc_interstellar img {
+    width: 230px;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 230px;
+    left: -115px;
+}
+
+.bloc_succès_échecs_et_interstellar {
+    display: flex;
+}
+
+
 
 .index_image_article {
     width: 85%;
@@ -193,5 +230,4 @@ img {
     position: relative;
     left: 7.5%;
     top: -2px;
-
 }
