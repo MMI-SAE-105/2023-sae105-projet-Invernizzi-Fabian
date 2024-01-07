@@ -5,8 +5,8 @@
     height: 10px;
     background: var(--Orange);
     border-radius: 0% 9999px 9999px 0%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .accueil_orange_droite {
@@ -16,8 +16,8 @@
     border-radius: 9999px 0% 0% 9999px;
     position: relative;
     left: 50%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .accueil_noir_gauche {
