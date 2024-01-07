@@ -287,7 +287,15 @@ iframe {
     display: flex;
 }
 
+/* Glossaire */
 
+.sous_titre_glossaire {
+    font-family: "ID Grotesk Trial";
+    font-size: 20px;
+    padding: 2% 5% 2% 5%;
+    text-decoration: underline;
+    font-weight: 200;
+}
 
 .index_image_article {
     width: 85%;
