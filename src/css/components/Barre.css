@@ -1,0 +1,39 @@
+.footer_rond_orange {
+    width: 120px;
+    height: 95px;
+    background: var(--Orange);
+    border-radius: 100% 0% 47% 53% / 100% 100% 0% 0%;
+    position: relative;
+    left: 70%;
+}
+
+/*Accueil*/
+
+.accueil_orange_gauche {
+    width: 50%;
+    height: 10px;
+    background: var(--Orange);
+    border-radius: 0% 9999px 9999px 0%;
+}
+
+.accueil_noir_gauche {
+    width: 45%;
+    height: 10px;
+    background: var(--Noir);
+    border-radius: 0% 9999px 9999px 0%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.accueil_noir_droite {
+    width: 45%;
+    height: 10px;
+    background: var(--Noir);
+    border-radius: 9999px 0% 0% 9999px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    position: relative;
+    left: 55%;
+}
+
+

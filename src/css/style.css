@@ -5,6 +5,8 @@
 @import "/src/css/base/main.css";
 @import "/src/css/components/menu.css";
 @import "/src/css/base/img_principal.css";
+@import "/src/css/components/Barre.css";
+
 @font-face {
     font-family:"ID Grotesk Trial";
     src: url("../fonts/IDGroteskTrial-Regular.ttf") format("truetype");
