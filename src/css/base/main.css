@@ -119,6 +119,27 @@ img {
     top: 83%;
 }
 
+.bloc_bouton{
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    
+}
+
+.bouton_noir{
+    font-family: "Roboto Bold";
+    font-size: 14px;
+    background: var(--Noir); 
+    color: var(--Blanc);
+    border: none;
+    border-radius: 20px;
+    padding: 20px 25px 20px 25px;
+    font-weight: 300;
+    max-width: 230px;
+    line-height: 1.5;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* Contenus Blanc */
 
 .index_text_article_blanc {
