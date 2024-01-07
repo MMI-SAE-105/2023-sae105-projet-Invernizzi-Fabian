@@ -6,3 +6,11 @@ a {
 img {
     width: 100%;
 }
+
+.text_date_durée{
+    font-family: "Montserrat Regular";
+    font-size: 10px;
+    color: var(--Gris-claire);
+    margin-left: 3%;
+    margin-top: 0.8%;
+}
