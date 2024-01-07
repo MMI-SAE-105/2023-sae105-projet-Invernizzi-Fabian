@@ -1,0 +1,12 @@
+.footer_rond_orange {
+    width: 120px;
+    height: 95px;
+    background: var(--Orange);
+    border-radius: 100% 0% 47% 53% / 100% 100% 0% 0%;
+    position: relative;
+    left: 68%;
+}
+
+.rond_orange_1 {
+
+}

@@ -7,7 +7,7 @@ img {
     width: 100%;
 }
 
-.text_date_durée{
+.text_date_durée {
     font-family: "Montserrat Regular";
     font-size: 10px;
     color: var(--Gris-claire);
@@ -15,3 +15,45 @@ img {
     margin-top: 0.8%;
 }
 
+/* Accueil */
+
+.index_text_article {
+    width: 69%;
+    background: var(--Noir);
+    position: relative;
+    left: 7%;
+    padding: 2% 8% 4% 8%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.index_text_article p {
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    color: var(--Blanc);
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+.index_text_article h3 {
+    font-family: "Id Grotesk Trial";
+    font-size: 24px;
+    color: var(--Blanc);
+    max-width: 100%;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.index_image_article {
+    width: 85%;
+    height: auto;
+    position: relative;
+    left: 7%;
+}
+
+.article_index_noir {
+
+}
+
+.article_index_blanc {
+
+}
