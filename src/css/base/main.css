@@ -13,7 +13,7 @@ img {
     font-family: "Montserrat Regular";
     font-size: 10px;
     color: var(--Gris-claire);
-    margin-left: 4%;
+    margin-left: 5%;
     margin-top: 0.8%;
 }
 
@@ -34,7 +34,7 @@ img {
 .text_intro_pages_1l {
     font-size: 20px;
     font-family: "Id Grotesk Trial";
-    padding-left: 4%;
+    padding-left: 5%;
     padding-bottom: 6%;
     margin-bottom: 12%;
 }
@@ -42,11 +42,31 @@ img {
 .text_intro_pages_2l {
     font-size: 20px;
     font-family: "Id Grotesk Trial";
-    padding-left: 4%;
+    padding-left: 5%;
     margin-bottom: 10%;
     max-width: 50%;
     line-height: 1.3;
     margin-top: -0.5%;
+}
+
+.paragraphe_basique{
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    padding: 0% 5% 0% 5%;
+}
+
+.sous_titre_basique{
+    font-family: "Montserrat Bold";
+    font-size: 20px;
+    padding: 2% 5% 2% 5%;
+}
+
+.légende_img{
+    font-family: "Montserrat Regular";
+    font-size: 12px;
+    padding: 0% 5% 5% 5%;
+    text-align: center;
+
 }
 
 /* Accueil */
