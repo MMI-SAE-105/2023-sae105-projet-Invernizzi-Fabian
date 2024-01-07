@@ -8,5 +8,37 @@
 }
 
 .rond_orange_1 {
+    width: 190px;
+    height: 190px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 68%;
+}
 
+.rond_orange_2 {
+    width: 190px;
+    height: 190px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 68%;
+}
+
+.rond_orange_3 {
+    width: 190px;
+    height: 190px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 68%;
+}
+
+.rond_orange_4 {
+    width: 190px;
+    height: 190px;
+    background: var(--Orange);
+    border-radius: 9999px;
+    position: relative;
+    left: 68%;
 }

@@ -17,7 +17,7 @@ img {
 
 /* Accueil */
 
-.index_text_article {
+.index_text_article_noir {
     width: 69%;
     background: var(--Noir);
     position: relative;
@@ -26,21 +26,52 @@ img {
     border-radius: 25px 25px 0px 0px;
 }
 
-.index_text_article p {
+.index_text_article_noir p {
     font-family: "Montserrat Regular";
     font-size: 14px;
     color: var(--Blanc);
     max-width: 100%;
     line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.index_text_article h3 {
+.index_text_article_noir h3 {
     font-family: "Id Grotesk Trial";
     font-size: 24px;
     color: var(--Blanc);
     max-width: 100%;
     line-height: 1.5;
     font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.index_text_article_blanc {
+    width: 69%;
+    background: var(--Blanc);
+    position: relative;
+    left: 7%;
+    padding: 2% 8% 4% 8%;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.index_text_article_blanc p {
+    font-family: "Montserrat Regular";
+    font-size: 14px;
+    color: var(--Noir);
+    max-width: 100%;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.index_text_article_blanc h3 {
+    font-family: "Id Grotesk Trial";
+    font-size: 24px;
+    color: var(--Noir);
+    max-width: 100%;
+    line-height: 1.5;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .index_image_article {
@@ -48,6 +79,7 @@ img {
     height: auto;
     position: relative;
     left: 7%;
+    top: -2px;
 }
 
 .article_index_noir {
