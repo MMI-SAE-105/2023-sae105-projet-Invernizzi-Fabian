@@ -2,170 +2,219 @@
 <html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Filmographie</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <title>Filmographie</title>
 </head>
 
 <body>
 
-    <header class="header_principal">
+  <header class="header_principal">
 
 
 
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
-          <ul class="no_space">
-            <div class="div_lien">
-              <section class="menu_section">
-                <li class="liste_menu"><a href="/fr/le_film_oppenheimer.html" class="lien_menu">Le film Oppenheimer</a></li>
-              </section>
-              <section class="menu_section">
-                <li class="liste_menu"><a href="/fr/prise_de_conscience.html" class="lien_menu">Prise de conscience de J.
-                    Robert
-                    Oppenheimer</a></li>
-              </section class="menu_section">
-              <section class="menu_section">
-                <li class="liste_menu"><a href="/fr/american_prometheus.html" class="lien_menu">American Prometheus</a></li>
-                <li class="liste_menu_secondaire"><a href="/fr/livres_similaires.html" class="lien_menu">Livres
-                    similaires</a></li>
-              </section>
-              <section class="menu_section">
-                <li class="liste_menu"><a href="/fr/christopher_nolan.html" class="lien_menu">Christopher Nolan</a></li>
-                <li class="liste_menu_secondaire"><a href="/fr/filmographie.html" class="lien_menu">Filmographie</a></li>
-              </section>
-              <section class="menu_section">
-                <li class="liste_menu"><a href="/fr/can_you_hear_the_music.html" class="lien_menu">Can You Hear The
-                    Music</a></li>
-              </section>
-            </div>
-    
-            <div class="div_lien_gris">
-              <li class="liste_menu_gris"><a href="/fr/autres_projets.html" class="lien_menu_gris">Autres projets</a></li>
-            </div>
-    
-            <a href="/fr/index.html">
-              <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.png" alt="">
-            </a>
-    
-            <li class="menu_titre"><a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a></li>
-    
-          </ul>
-        </nav>
-        <nav class="header_nav">
-    
-          <h1 class="header_titre">OppenInsights</h1>
-          <nav class="header_nav_secondaire">
-            <p class="header_langue">FR</p>
-    
-            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-              <img class="header_burger" src="/public/img/Menu_header_footer/header/menu_burger_blanc.png" alt="">
-            </button>
-          </nav>
-    
-        </nav>
-    
-      </header>
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
+      <ul class="no_space">
+        <div class="div_lien">
+          <section class="menu_section">
+            <li class="liste_menu"><a href="/fr/le_film_oppenheimer.html" class="lien_menu">Le film Oppenheimer</a></li>
+          </section>
+          <section class="menu_section">
+            <li class="liste_menu"><a href="/fr/prise_de_conscience.html" class="lien_menu">Prise de conscience de J.
+                Robert
+                Oppenheimer</a></li>
+          </section class="menu_section">
+          <section class="menu_section">
+            <li class="liste_menu"><a href="/fr/american_prometheus.html" class="lien_menu">American Prometheus</a></li>
+            <li class="liste_menu_secondaire"><a href="/fr/livres_similaires.html" class="lien_menu">Livres
+                similaires</a></li>
+          </section>
+          <section class="menu_section">
+            <li class="liste_menu"><a href="/fr/christopher_nolan.html" class="lien_menu">Christopher Nolan</a></li>
+            <li class="liste_menu_secondaire"><a href="/fr/filmographie.html" class="lien_menu">Filmographie</a></li>
+          </section>
+          <section class="menu_section">
+            <li class="liste_menu"><a href="/fr/can_you_hear_the_music.html" class="lien_menu">Can You Hear The
+                Music</a></li>
+          </section>
+        </div>
 
-    <main>
+        <div class="div_lien_gris">
+          <li class="liste_menu_gris"><a href="/fr/autres_projets.html" class="lien_menu_gris">Autres projets</a></li>
+        </div>
 
-        <div class="img_top_pages_filmographie">
-            <h1 class="titre_top_pages">Filmographie</h1>
-            </div>
-       
-        
-        <p>Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 3 min </p>
+        <a href="/fr/index.html">
+          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.png" alt="">
+        </a>
 
-        <h2>Christopher Nolan n’a pas seulement réalisé Oppenheimer, durant sa carrière il a pu réaliser des films qui
-            ont connu un très grand succès tels que :</h2>
+        <li class="menu_titre"><a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a></li>
 
-        <section>
+      </ul>
+    </nav>
+    <nav class="header_nav">
 
-            <p>The Dark Knight</p>
-            <p>Le chevalier noir sorti
-                2008 – Action / Thriller</p>
-            <p>Résumé : A Gotham City, ville gangrenée par la violence, la criminalité et la corruption. Des
-                cambrioleurs armés dévalisent une banque. Chacun doit se débarrasser de ses complices, jusqu'à ce qu'il
-                n'en reste plus qu'un : le commanditaire du casse, le Joker, clown psychopathe, infantile et cruel.</p>
-            <p>Acteurs Principaux : Christian Bale / Heath Ledger / Gary Oldman / Michael Caine / Aaron Eckhart…</p>
+      <h1 class="header_titre">OppenInsights</h1>
+      <nav class="header_nav_secondaire">
+        <p class="header_langue">FR</p>
 
-            <img src="/public/img/Filmographie/filmographie_the_dark_knight.webp" alt="">
-            <button>Page Allociné</button>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+          <img class="header_burger" src="/public/img/Menu_header_footer/header/menu_burger_blanc.png" alt="">
+        </button>
+      </nav>
 
-        </section>
+    </nav>
 
-        <img src="/public/img/Menu_header_footer/barre_orange_droite.png" alt="">
+  </header>
 
-        <section>
+  <main>
 
-            <p>Interstellar</p>
-            <p>2014 – Science-Fiction</p>
-            <p>Résumé : Alors que la Terre se meurt, une équipe d'astronautes franchit un trou de ver apparu près de
-                Saturne et conduisant à une autre galaxie, afin d'explorer un nouveau système stellaire dans l'espoir de
-                trouver une planète habitable et d'y établir une colonie spatiale pour sauver l'humanité.</p>
-            <p>Acteurs Principaux : Matthew McConauGhey / Anne Hathaway / Michael Caine / Jessica Chastain…</p>
-
-            <img src="/public/img/Filmographie/filmographie_interstellar.webp" alt="">
-            <button>Page Allociné</button>
-
-        </section>
-
-        <img src="/public/img/Menu_header_footer/barre_orange_gauche.png" alt="">
-
-        <section>
-
-            <p>Inception</p>
-            <p>2010 – Science-Fiction</p>
-            <p>Résumé : Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l'art périlleux de l'extraction :
-                sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus
-                profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable.</p>
-            <p>Acteurs Principaux : Léonardo DiCaprio / Joseph Gordon-Levitt / Cillian Murphy / Tom Hardy…</p>
-
-            <img src="/public/img/Filmographie/filmographie_inception.webp" alt="">
-            <button>Page Allociné</button>
-
-        </section>
-
-        <img src="/public/img/Menu_header_footer/barre_orange_droite.png" alt="">
-
-        <section>
-
-            <p>Dunkerque</p>
-            <p>2017 – Historique / Guerre</p>
-            <p>Résumé : Entre le 26 mai et le 4 juin 1940, les plages de Dunkerque sont ravagées par la guerre. Venus de
-                Belgique, d'Angleterre, du Canada et de France, des soldats alliés se retrouvent pris sous le feu des
-                forces allemandes. Une vaste opération d'évacuation est mise en place pour tenter de les sauver.</p>
-            <p>Acteur Principaux : Harry Styles / Fionn Whitehead / Cillian Murphy / Tom Hardy…</p>
-
-            <img src="/public/img/Filmographie/filmographie_dunkerque.webp" alt="">
-            <button>Page Allociné</button>
-
-        </section>
-
-        <img src="/public/img/Menu_header_footer/barre_orange_gauche.png" alt="">
-
-        <section>
-
-            <p>Tenet</p>
-            <p>2020 – Science-Fiction / Action</p>
-            <p>Résumé : Un agent de la CIA, le « protagoniste » (John David Washington), s'infiltre au sein d'une
-                opération clandestine russe : le vol d'un objet mystérieux, supposé être du plutonium, durant une prise
-                d'otages dans un opéra à Kiev. Sa mission le projettera dans une dimension qui dépasse le temps.
-                Pourtant, il ne s'agit pas d'un voyage dans le temps, mais d'un renversement temporel.</p>
-            <p>Acteur Principaux : Elizabeth Debicki / Jhon David Washington / Robert Pattinson…</p>
-
-            <img src="/public/img/Filmographie/filmographie_dunkerque.webp" alt="">
-            <button>Page Allociné</button>
-
-        </section>
-
-    </main>
-
-    <footer>
+    <div class="img_top_pages_filmographie">
+      <h1 class="titre_top_pages">Filmographie</h1>
+    </div>
 
 
-    </footer>
+    <p>Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 3 min </p>
+
+    <h2>Christopher Nolan n’a pas seulement réalisé Oppenheimer, durant sa carrière il a pu réaliser des films qui
+      ont connu un très grand succès tels que :</h2>
+
+    <section>
+
+      <p>The Dark Knight</p>
+      <p>Le chevalier noir sorti
+        2008 – Action / Thriller</p>
+      <p>Résumé : A Gotham City, ville gangrenée par la violence, la criminalité et la corruption. Des
+        cambrioleurs armés dévalisent une banque. Chacun doit se débarrasser de ses complices, jusqu'à ce qu'il
+        n'en reste plus qu'un : le commanditaire du casse, le Joker, clown psychopathe, infantile et cruel.</p>
+      <p>Acteurs Principaux : Christian Bale / Heath Ledger / Gary Oldman / Michael Caine / Aaron Eckhart…</p>
+
+      <img src="/public/img/Filmographie/filmographie_the_dark_knight.webp" alt="">
+      <button>Page Allociné</button>
+
+    </section>
+
+    <img src="/public/img/Menu_header_footer/barre_orange_droite.png" alt="">
+
+    <section>
+
+      <p>Interstellar</p>
+      <p>2014 – Science-Fiction</p>
+      <p>Résumé : Alors que la Terre se meurt, une équipe d'astronautes franchit un trou de ver apparu près de
+        Saturne et conduisant à une autre galaxie, afin d'explorer un nouveau système stellaire dans l'espoir de
+        trouver une planète habitable et d'y établir une colonie spatiale pour sauver l'humanité.</p>
+      <p>Acteurs Principaux : Matthew McConauGhey / Anne Hathaway / Michael Caine / Jessica Chastain…</p>
+
+      <img src="/public/img/Filmographie/filmographie_interstellar.webp" alt="">
+      <button>Page Allociné</button>
+
+    </section>
+
+    <img src="/public/img/Menu_header_footer/barre_orange_gauche.png" alt="">
+
+    <section>
+
+      <p>Inception</p>
+      <p>2010 – Science-Fiction</p>
+      <p>Résumé : Dom Cobb est un voleur expérimenté – le meilleur qui soit dans l'art périlleux de l'extraction :
+        sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus
+        profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable.</p>
+      <p>Acteurs Principaux : Léonardo DiCaprio / Joseph Gordon-Levitt / Cillian Murphy / Tom Hardy…</p>
+
+      <img src="/public/img/Filmographie/filmographie_inception.webp" alt="">
+      <button>Page Allociné</button>
+
+    </section>
+
+    <img src="/public/img/Menu_header_footer/barre_orange_droite.png" alt="">
+
+    <section>
+
+      <p>Dunkerque</p>
+      <p>2017 – Historique / Guerre</p>
+      <p>Résumé : Entre le 26 mai et le 4 juin 1940, les plages de Dunkerque sont ravagées par la guerre. Venus de
+        Belgique, d'Angleterre, du Canada et de France, des soldats alliés se retrouvent pris sous le feu des
+        forces allemandes. Une vaste opération d'évacuation est mise en place pour tenter de les sauver.</p>
+      <p>Acteur Principaux : Harry Styles / Fionn Whitehead / Cillian Murphy / Tom Hardy…</p>
+
+      <img src="/public/img/Filmographie/filmographie_dunkerque.webp" alt="">
+      <button>Page Allociné</button>
+
+    </section>
+
+    <img src="/public/img/Menu_header_footer/barre_orange_gauche.png" alt="">
+
+    <section>
+
+      <p>Tenet</p>
+      <p>2020 – Science-Fiction / Action</p>
+      <p>Résumé : Un agent de la CIA, le « protagoniste » (John David Washington), s'infiltre au sein d'une
+        opération clandestine russe : le vol d'un objet mystérieux, supposé être du plutonium, durant une prise
+        d'otages dans un opéra à Kiev. Sa mission le projettera dans une dimension qui dépasse le temps.
+        Pourtant, il ne s'agit pas d'un voyage dans le temps, mais d'un renversement temporel.</p>
+      <p>Acteur Principaux : Elizabeth Debicki / Jhon David Washington / Robert Pattinson…</p>
+
+      <img src="/public/img/Filmographie/filmographie_dunkerque.webp" alt="">
+      <button>Page Allociné</button>
+
+    </section>
+
+    <div class="footer_rond_orange"></div>
+
+  </main>
+
+  <footer class="footer_principal">
+
+    <nav class="footer_contenus_informations">
+
+      <div class="footer_contenus">
+        <h4 class="footer_titre">Contenus</h4>
+        <ul class="footer_contenus_liste">
+          <a class="footer_liste_lien" href="/fr/a_propos.html">
+            <li>À propos</li>
+          </a>
+          <a class="footer_liste_lien" href="/fr/contact.html">
+            <li>Contact</li>
+          </a>
+          <a class="footer_liste_lien" href="/fr/glossaire.html">
+            <li>Glossaire</li>
+          </a>
+          <a class="footer_liste_lien" href="/fr/autres_projets.html">
+            <li>Autres projets</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="footer_informations">
+        <h4 class="footer_titre">Informations</h4>
+        <ul class="footer_informations_liste">
+          <li>Fabian Invernizzi</li>
+          <li>MMI 1-A2</li>
+          <li><a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <div class="footer_réseaux">
+
+      <a href="https://www.youtube.com/@departementmmi4128"><img class="footer_yt"
+          src="/public/img/Menu_header_footer/footer/youtube_blanc.png" alt=""></a>
+      <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer_insta"
+          src="/public/img/Menu_header_footer/footer/instagram_blanc.png" alt=""></a>
+    </div>
+
+    <div class="footer_source">
+      <p class="footer_texte">Projet réalisé dans le cadre d’un exercice
+        pédagogique au département <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a></p>
+
+      <a href="https://butmmi.thomasjeu.fr/#/">
+        <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.png" alt="">
+      </a>
+    </div>
+
+  </footer>
 
 </body>
 
