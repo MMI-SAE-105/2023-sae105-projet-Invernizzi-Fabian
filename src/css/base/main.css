@@ -81,6 +81,7 @@ img {
 
 iframe {
     aspect-ratio: 16/9;
+    autoplay: 0;
 }
 
 .frise{
