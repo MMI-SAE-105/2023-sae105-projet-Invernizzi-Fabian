@@ -177,7 +177,7 @@ iframe {
 /* Contenus Blanc */
 
 .bloc_blanc {
-    z-index: 1;
+    z-index: -1;
     position: relative;
     background: #F7F7F7;
     margin: 20px 1px 60px 15px;
