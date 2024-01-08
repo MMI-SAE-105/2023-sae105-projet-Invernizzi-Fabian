@@ -1,206 +1,295 @@
 <!DOCTYPE html>
 <html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Le film Oppenheimer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script defer src="https://unpkg.com/alpinejs"></script>
-  <link rel="stylesheet" href="/src/css/style.css">
-  <title>Le film Oppenheimer</title>
-</head>
+  <body>
+    <header class="header_principal">
+      <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.600ms.origin.top
+        class="menu"
+      >
+        <div class="no_space">
+          <div class="div_lien">
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/le_film_oppenheimer.html" class="lien_menu"
+                  >Le film Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/prise_de_conscience.html" class="lien_menu"
+                  >Prise de conscience de J. Robert Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/american_prometheus.html" class="lien_menu"
+                  >American Prometheus</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/livres_similaires.html" class="lien_menu"
+                  >Livres similaires</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/christopher_nolan.html" class="lien_menu"
+                  >Christopher Nolan</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/filmographie.html" class="lien_menu"
+                  >Filmographie</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/can_you_hear_the_music.html" class="lien_menu"
+                  >Can You Hear The Music</a
+                >
+              </p>
+            </div>
+          </div>
 
-<body>
+          <div class="div_lien_gris">
+            <p class="liste_menu_gris">
+              <a href="/fr/autres_projets.html" class="lien_menu_gris"
+                >Autres projets</a
+              >
+            </p>
+          </div>
 
-  <header class="header_principal">
+          <a href="/fr/index.html">
+            <img
+              class="menu_logo"
+              src="/public/img/Menu_header_footer/menu/logo_site_orange.webp"
+              alt=""
+            />
+          </a>
 
-    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
-      <div class="no_space">
-        <div class="div_lien">
-          <div class="menu_section">
-            <p class="liste_menu"><a href="/fr/le_film_oppenheimer.html" class="lien_menu">Le film Oppenheimer</a></p>
-          </div>
-          <div class="menu_section">
-            <p class="liste_menu"><a href="/fr/prise_de_conscience.html" class="lien_menu">Prise de conscience de J.
-                Robert
-                Oppenheimer</a></p>
-          </div>
-          <div class="menu_section">
-            <p class="liste_menu"><a href="/fr/american_prometheus.html" class="lien_menu">American Prometheus</a></p>
-            <p class="liste_menu_secondaire"><a href="/fr/livres_similaires.html" class="lien_menu">Livres
-                similaires</a></p>
-          </div>
-          <div class="menu_section">
-            <p class="liste_menu"><a href="/fr/christopher_nolan.html" class="lien_menu">Christopher Nolan</a></p>
-            <p class="liste_menu_secondaire"><a href="/fr/filmographie.html" class="lien_menu">Filmographie</a></p>
-          </div>
-          <div class="menu_section">
-            <p class="liste_menu"><a href="/fr/can_you_hear_the_music.html" class="lien_menu">Can You Hear The
-                Music</a></p>
-          </div>
+          <p class="menu_titre">
+            <a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a>
+          </p>
         </div>
-
-        <div class="div_lien_gris">
-          <p class="liste_menu_gris"><a href="/fr/autres_projets.html" class="lien_menu_gris">Autres projets</a></p>
-        </div>
-
+      </nav>
+      <nav class="header_nav">
         <a href="/fr/index.html">
-          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.webp" alt="">
+          <h2 class="header_titre">OppenInsights</h2>
         </a>
+        <nav class="header_nav_secondaire">
+          <p class="header_langue">FR</p>
 
-        <p class="menu_titre"><a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a></p>
+          <button
+            aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIsOpen"
+            class="header_menuBtn"
+          >
+            <img
+              class="header_burger"
+              x-show="!menuIsOpen"
+              src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp"
+              alt=""
+            />
+            <img
+              class="header_burger"
+              x-show="menuIsOpen"
+              src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
+              alt=""
+            />
+          </button>
+        </nav>
+      </nav>
+    </header>
 
+    <main>
+      <div class="img_top_pages_le_film">
+        <h1 class="titre_top_pages">Le film Oppenheimer</h1>
       </div>
-    </nav>
-    <nav class="header_nav">
 
-      <a href="/fr/index.html">
-        <h2 class="header_titre">OppenInsights</h2>
-      </a>
-      <nav class="header_nav_secondaire">
-        <p class="header_langue">FR</p>
+      <div class="bloc_intro_pages">
+        <div class="rond_orange_intro_pages"></div>
+        <p class="text_date_durée">
+          Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 3 min
+        </p>
+        <h2 class="text_intro_pages_2l">
+          La nouvelle pépite de Christopher Nolan ?
+        </h2>
+      </div>
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-          <img class="header_burger" x-show="!menuIsOpen" src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp" alt="">
-          <img class="header_burger" x-show="menuIsOpen" src="/public/img/Menu_header_footer/menu/Croix_blanche.webp" alt="">
-        </button>
+      <p class="paragraphe_basique">
+        Oppenheimer est un film biographique de Christopher Nolan sorti en 2023.
+        Il retrace la vie du physicien J. Robert Oppenheimer, qui a dirigé le
+        <u>projet Manhattan</u>, le programme secret qui a abouti à la création
+        de la bombe atomique.
+      </p>
+      <p class="paragraphe_basique">
+        Le film a été salué par la critique pour son approche historique et
+        technique, ainsi que pour ses performances d'acteurs. En effet, Cillian
+        Murphy est remarquable dans le rôle d'Oppenheimer. Il parvient à
+        capturer à la fois la complexité et la fragilité du personnage.
+      </p>
+
+      <div class="accueil_orange_gauche"></div>
+
+      <p class="légende_img">Bande annonce d’Oppenheimer</p>
+
+      <video width="100%" height="auto" controls>
+        <source src="/public/video/Trailer_Oppenheimer.mp4" type="video/mp4" />
+      </video>
+
+      <div class="accueil_orange_droite"></div>
+
+      <p class="paragraphe_basique">
+        Oppenheimer est un film ambitieux, tant sur le plan historique que
+        technique. Le film retrace les années qui ont précédé et suivi la
+        Seconde Guerre mondiale, et met en scène des événements réels tels que
+        le <u>projet Manhattan</u> et les
+        <u>bombardements atomiques d'Hiroshima et de Nagasaki</u>
+      </p>
+
+      <h3 class="sous_titre_basique">Anecdotes</h3>
+      <p class="paragraphe_basique">
+        Le film Oppenheimer a fait l'objet de plusieurs anecdotes intéressantes.
+        Par exemple, Nolan a passé plusieurs années à se documenter sur la vie
+        d'Oppenheimer, et il a rencontré plusieurs membres de sa famille pour en
+        savoir plus sur lui. Le film a également été tourné dans plusieurs pays,
+        dont les États-Unis, le Royaume-Uni et l'Inde.
+      </p>
+      <h3 class="sous_titre_basique">Recommandation</h3>
+      <p class="paragraphe_basique">
+        Oppenheimer est un film recommandé à tous ceux qui s'intéressent à
+        l'histoire, à la science ou à la technique. Le film est un
+        incontournable pour tous ceux qui souhaitent en savoir plus sur l'un des
+        événements les plus importants du XXe siècle.
+      </p>
+
+      <h3 class="sous_titre_basique">Analyse critique</h3>
+
+      <p class="paragraphe_basique">
+        Oppenheimer est un film réussi qui parvient à concilier deux aspects
+        difficiles à traiter : la complexité historique de la Seconde Guerre
+        mondiale et la nature technique du <u>projet Manhattan</u>. Nolan
+        parvient à rendre ces deux aspects accessibles au grand public, tout en
+        conservant un niveau de réalisme et de précision. Le film est également
+        porté par des performances d'acteurs exceptionnelles, notamment Cillian
+        Murphy dans le rôle d'Oppenheimer.
+      </p>
+
+      <figure>
+        <img
+          src="/public/img/Le_film/film_oppenheimer_noir&blanc.webp"
+          alt=""
+        />
+        <figcaption class="légende_img">
+          Cillian Murphy - Oppenheimer
+        </figcaption>
+      </figure>
+
+      <p class="paragraphe_basique">
+        Sur le plan historique, le film est un portrait nuancé d'Oppenheimer.
+        Nolan montre le physicien sous ses deux aspects : d'un côté, un génie
+        scientifique qui a joué un rôle crucial dans la victoire des Alliés
+        pendant la Seconde Guerre mondiale ; d'un autre côté, un homme tourmenté
+        par la conscience de la destruction qu'il a contribué à créer, d’où la
+        fameuse citation « Now i am become Death, the destroyer of worlds ».
+      </p>
+
+      <p class="paragraphe_basique">
+        Sur le plan technique, le film est un tour de force. Nolan utilise des
+        techniques de tournage innovantes pour recréer les événements du
+        <u>projet Manhattan</u>, notamment les effets spéciaux à grande échelle
+        et une utilisation extensive de la <u>photographie IMAX</u>. Ces
+        techniques permettent au spectateur de se plonger dans l'histoire et de
+        comprendre la complexité du processus de développement de la bombe
+        atomique.
+      </p>
+    </main>
+
+    <footer class="footer_principal">
+      <div class="footer_rond_orange"></div>
+      <nav class="footer_contenus_informations">
+        <div class="footer_contenus">
+          <h4 class="footer_titre">Contenus</h4>
+          <ul class="footer_contenus_liste">
+            <li>
+              <a class="footer_liste_lien" href="/fr/a_propos.html">À propos</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/contact.html">Contact</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/glossaire.html"
+                >Glossaire</a
+              >
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/autres_projets.html"
+                >Autres projets</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_informations">
+          <h4 class="footer_titre">Informations</h4>
+          <ul class="footer_informations_liste">
+            <li>Fabian Invernizzi</li>
+            <li>MMI 1-A2</li>
+            <li>
+              <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"
+                ><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
 
-    </nav>
-
-  </header>
-
-  <main>
-
-    <div class="img_top_pages_le_film">
-      <h1 class="titre_top_pages">Le film Oppenheimer</h1>
-    </div>
-
-    <div class="bloc_intro_pages">
-      <div class="rond_orange_intro_pages"></div>
-      <p class="text_date_durée">Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 3 min </p>
-      <h2 class="text_intro_pages_2l">La nouvelle pépite de Christopher Nolan ?</h2>
-    </div>
-
-
-
-    <p class="paragraphe_basique">Oppenheimer est un film biographique de Christopher Nolan sorti en 2023. Il retrace la
-      vie du physicien J.
-      Robert Oppenheimer, qui a dirigé le <u>projet Manhattan</u>, le programme secret qui a abouti à la création
-      de la bombe atomique.
-    </p>
-    <p class="paragraphe_basique">Le film a été salué par la critique pour son approche historique et technique, ainsi
-      que pour ses
-      performances d'acteurs. En effet, Cillian Murphy est remarquable dans le rôle d'Oppenheimer. Il parvient à
-      capturer à la fois la complexité et la fragilité du personnage.</p>
-
-    <div class="accueil_orange_gauche"></div>
-
-    <p class="légende_img">Bande annonce d’Oppenheimer</p>
-
-    <video width="100%" height="auto" controls>
-      <source src="/public/video/Trailer_Oppenheimer.mp4" type="video/mp4">
-    </video>
-
-    <div class="accueil_orange_droite"></div>
-
-    <p class="paragraphe_basique">Oppenheimer est un film ambitieux, tant sur le plan historique que technique. Le film
-      retrace les années qui
-      ont précédé et suivi la Seconde Guerre mondiale, et met en scène des événements réels tels que le <u>projet
-        Manhattan</u> et les <u>bombardements atomiques d'Hiroshima et de Nagasaki</u></p>
-
-    <h3 class="sous_titre_basique">Anecdotes</h3>
-    <p class="paragraphe_basique">Le film Oppenheimer a fait l'objet de plusieurs anecdotes intéressantes. Par exemple,
-      Nolan a passé plusieurs
-      années à se documenter sur la vie d'Oppenheimer, et il a rencontré plusieurs membres de sa famille pour en
-      savoir plus sur lui. Le film a également été tourné dans plusieurs pays, dont les États-Unis, le Royaume-Uni
-      et l'Inde.
-    </p>
-    <h3 class="sous_titre_basique">Recommandation</h3>
-    <p class="paragraphe_basique">Oppenheimer est un film recommandé à tous ceux qui s'intéressent à l'histoire, à la
-      science ou à la
-      technique. Le film est un incontournable pour tous ceux qui souhaitent en savoir plus sur l'un des
-      événements les plus importants du XXe siècle.
-    </p>
-
-    <h3 class="sous_titre_basique">Analyse critique</h3>
-
-    <p class="paragraphe_basique">Oppenheimer est un film réussi qui parvient à concilier deux aspects difficiles à
-      traiter : la complexité
-      historique de la Seconde Guerre mondiale et la nature technique du <u>projet Manhattan</u>. Nolan parvient à
-      rendre ces deux aspects accessibles au grand public, tout en conservant un niveau de réalisme et de
-      précision. Le film est également porté par des performances d'acteurs exceptionnelles, notamment Cillian
-      Murphy dans le rôle d'Oppenheimer.</p>
-
-    <figure>
-      <img src="/public/img/Le_film/film_oppenheimer_noir&blanc.webp" alt="">
-      <figcaption class="légende_img">Cillian Murphy - Oppenheimer</figcaption>
-    </figure>
-
-    <p class="paragraphe_basique">Sur le plan historique, le film est un portrait nuancé d'Oppenheimer. Nolan montre le
-      physicien sous ses deux
-      aspects : d'un côté, un génie scientifique qui a joué un rôle crucial dans la victoire des Alliés pendant la
-      Seconde Guerre mondiale ; d'un autre côté, un homme tourmenté par la conscience de la destruction qu'il a
-      contribué à créer, d’où la fameuse citation « Now i am become Death, the destroyer of worlds ».</p>
-
-    <p class="paragraphe_basique">Sur le plan technique, le film est un tour de force. Nolan utilise des techniques de
-      tournage innovantes pour
-      recréer les événements du <u>projet Manhattan</u>, notamment les effets spéciaux à grande échelle et une
-      utilisation extensive de la <u>photographie IMAX</u>. Ces techniques permettent au spectateur de se plonger
-      dans l'histoire et de comprendre la complexité du processus de développement de la bombe atomique.</p>
-
-    <div class="footer_rond_orange"></div>
-
-  </main>
-
-  <footer class="footer_principal">
-
-    <nav class="footer_contenus_informations">
-
-      <div class="footer_contenus">
-        <h4 class="footer_titre">Contenus</h4>
-        <ul class="footer_contenus_liste">
-          
-            <li><a class="footer_liste_lien" href="/fr/a_propos.html">À propos</a></li>  
-          
-            <li><a class="footer_liste_lien" href="/fr/contact.html">Contact</a></li>
-              
-            <li><a class="footer_liste_lien" href="/fr/glossaire.html">Glossaire</a></li>
-          
-            <li><a class="footer_liste_lien" href="/fr/autres_projets.html">Autres projets</a></li>
-          
-        </ul>
+      <div class="footer_réseaux">
+        <a href="https://www.youtube.com/@departementmmi4128"
+          ><img
+            class="footer_yt"
+            src="/public/img/Menu_header_footer/footer/youtube-blanc.webp"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/mmi_montbeliard/"
+          ><img
+            class="footer_insta"
+            src="/public/img/Menu_header_footer/footer/instagram-blanc.webp"
+            alt=""
+        /></a>
       </div>
 
-      <div class="footer_informations">
-        <h4 class="footer_titre">Informations</h4>
-        <ul class="footer_informations_liste">
-          <li>Fabian Invernizzi</li>
-          <li>MMI 1-A2</li>
-          <li><a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a></li>
-        </ul>
+      <div class="footer_source">
+        <p class="footer_texte">
+          Projet réalisé dans le cadre d’un exercice pédagogique au département
+          <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a>
+        </p>
+
+        <a href="https://butmmi.thomasjeu.fr/#/">
+          <img
+            class="footer_MMI"
+            src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp"
+            alt=""
+          />
+        </a>
       </div>
-
-    </nav>
-
-    <div class="footer_réseaux">
-
-      <a href="https://www.youtube.com/@departementmmi4128"><img class="footer_yt"
-          src="/public/img/Menu_header_footer/footer/youtube-blanc.webp" alt=""></a>
-      <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer_insta"
-          src="/public/img/Menu_header_footer/footer/instagram-blanc.webp" alt=""></a>
-    </div>
-
-    <div class="footer_source">
-      <p class="footer_texte">Projet réalisé dans le cadre d’un exercice
-        pédagogique au département <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a></p>
-
-      <a href="https://butmmi.thomasjeu.fr/#/">
-        <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp" alt="">
-      </a>
-    </div>
-
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>
