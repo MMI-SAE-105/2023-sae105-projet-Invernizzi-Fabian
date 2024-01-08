@@ -182,14 +182,12 @@ iframe {
     background: #F7F7F7;
     margin: 20px 1px 60px 15px;
     padding: 8px 15px 10px 15px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
     max-width: 85%;
 }
 
 .bloc_blanc_frise {
-    
-    
     background: #F7F7F7;
     margin: 20px 15px 40px 40px;
     padding: 0px 0px 10px 0px;
