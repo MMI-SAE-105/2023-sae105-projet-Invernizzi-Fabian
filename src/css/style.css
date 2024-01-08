@@ -10,23 +10,23 @@
 
 @font-face {
     font-family:"ID Grotesk Trial";
-    src: url("../fonts/IDGroteskTrial-Regular.ttf") format("truetype");
+    src: url("../fonts/IDGroteskTrial-Regular.woff2") format("woff2");
 }
 @font-face {
     font-family:"ID Grotesk Trial Bold";
-    src: url("../fonts/IDGroteskTrial-Bold.ttf") format("truetype");
+    src: url("../fonts/IDGroteskTrial-Regular.woff2") format("woff2");
 }
 @font-face {
     font-family:"Montserrat Bold";
-    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
 }
 @font-face {
     font-family:"Montserrat Regular";
-    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
 }
 @font-face {
     font-family:"Roboto Bold";
-    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+    src: url("../fonts/Roboto-Bold.woff2") format("woff2");
 }
 
 
