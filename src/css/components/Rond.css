@@ -188,3 +188,28 @@
     margin-top: -5px;
 }
 
+/*Filmo*/
+
+.rond_filmo_1 {
+    z-index: -2;
+    width: 100px;
+    height: 200px;
+    background: var(--Orange);
+    border-radius: 100% 0% 0% 100% / 46% 53% 47% 54% ;
+    position: absolute;
+    right: 0;
+    margin-top: -20%;
+}
+
+.rond_filmo_2 {
+    z-index: -2;
+    width: 150px;
+    height: 150px;
+    background: var(--Orange);
+    border-radius: 9999px ;
+    position: absolute;
+    left: -10%;
+    margin-top: -10%;
+    
+}
+

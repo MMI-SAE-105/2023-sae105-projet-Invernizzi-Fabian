@@ -1,379 +1,415 @@
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .text_date_durée {
-    font-family: "Montserrat Regular";
-    font-size: 10px;
-    color: var(--Gris-claire);
-    margin-left: 5%;
-    margin-top: 0.8%;
+  font-family: "Montserrat Regular";
+  font-size: 10px;
+  color: var(--Gris-claire);
+  margin-left: 5%;
+  margin-top: 0.8%;
 }
 
 .accueil_sous_titre {
-    font-family: "Montserrat Bold";
-    font-size: 32px;
-    color: var(--Noir);
-    padding: 5px 20px 5px 20px;
+  font-family: "Montserrat Bold";
+  font-size: 32px;
+  color: var(--Noir);
+  padding: 5px 20px 5px 20px;
 }
 
 .accueil_intro {
-    background: #F7F7F7;
-    margin: 20px 15px 60px 15px;
-    padding: 10px 15px 10px 15px;
-    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+  background: #f7f7f7;
+  margin: 20px 15px 60px 15px;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .text_intro_pages_1l {
-    font-size: 20px;
-    font-family: "Id Grotesk Trial";
-    padding-left: 5%;
-    padding-bottom: 6%;
-    margin-bottom: 12%;
+  font-size: 20px;
+  font-family: "Id Grotesk Trial";
+  padding-left: 5%;
+  padding-bottom: 6%;
+  margin-bottom: 12%;
 }
 
 .text_intro_pages_2l {
-    font-size: 20px;
-    font-family: "Id Grotesk Trial";
-    padding-left: 5%;
-    margin-bottom: 10%;
-    max-width: 54%;
-    line-height: 1.3;
-    margin-top: -0.5%;
+  font-size: 20px;
+  font-family: "Id Grotesk Trial";
+  padding-left: 5%;
+  margin-bottom: 10%;
+  max-width: 54%;
+  line-height: 1.3;
+  margin-top: -0.5%;
 }
 
 .paragraphe_basique {
-    font-family: "Montserrat Regular";
-    font-size: 14px;
-    padding: 0% 5% 0% 5%;
-    line-height: 1.4;
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  padding: 0% 5% 0% 5%;
+  line-height: 1.4;
 }
 
 .sous_titre_basique {
-    font-family: "Montserrat Bold";
-    font-size: 20px;
-    padding: 2% 5% 2% 5%;
+  font-family: "Montserrat Bold";
+  font-size: 20px;
+  padding: 2% 5% 2% 5%;
 }
 
-.sous_titre_centré{
-    font-family: "Montserrat Bold";
-    font-size: 20px;
-    padding: 2% 5% 2% 5%;
-    text-align: center;
+.sous_titre_centré {
+  font-family: "Montserrat Bold";
+  font-size: 20px;
+  padding: 2% 5% 2% 5%;
+  text-align: center;
 }
 
 .légende_img {
-    font-family: "Montserrat Regular";
-    font-size: 12px;
-    padding: 0% 5% 0% 5%;
-    text-align: center;
+  font-family: "Montserrat Regular";
+  font-size: 12px;
+  padding: 0% 5% 0% 5%;
+  text-align: center;
 }
 
-.bloc_intro_pages{
-    margin-bottom: 60px;
+.bloc_intro_pages {
+  margin-bottom: 60px;
 }
 
 iframe {
-    aspect-ratio: 16/9;
-    autoplay: 0;
+  aspect-ratio: 16/9;
+  autoplay: 0;
 }
 
-.frise{
-    z-index: -1;
-    position: absolute;
-    width: 40px;
-    left: -0.5vh;
-    margin-top: 20vh;
-    
+.frise {
+  z-index: -1;
+  position: absolute;
+  width: 40px;
+  left: -0.5vh;
+  margin-top: 20vh;
 }
 
-.frise_titre{
-    font-family: "Montserrat Regular";
-    font-size: 20px;
-    padding: 2% 5% 2% 5%;
-    text-align: center;
-    margin-top: 8px ;
-    margin-bottom: 8px ;
+.frise_titre {
+  font-family: "Montserrat Regular";
+  font-size: 20px;
+  padding: 2% 5% 2% 5%;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 /* Accueil */
 
 /* Contenus Noir */
 
 .index_text_article_noir {
-    z-index: 4;
-    width: 69%;
-    background: var(--Noir);
-    position: relative;
-    left: 7.5%;
-    padding: 2% 8% 4% 8%;
-    border-radius: 25px 25px 0px 0px;
+  z-index: 4;
+  width: 69%;
+  background: var(--Noir);
+  position: relative;
+  left: 7.5%;
+  padding: 2% 8% 4% 8%;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .index_text_article_noir p {
-    font-family: "Montserrat Regular";
-    font-size: 14px;
-    color: var(--Blanc);
-    max-width: 100%;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  color: var(--Blanc);
+  max-width: 100%;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .index_text_article_noir h3 {
-    font-family: "Id Grotesk Trial";
-    font-size: 24px;
-    color: var(--Blanc);
-    max-width: 100%;
-    line-height: 1.5;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Id Grotesk Trial";
+  font-size: 24px;
+  color: var(--Blanc);
+  max-width: 100%;
+  line-height: 1.5;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .article_noir {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .bouton_article_noir {
-    font-family: "Roboto Bold";
-    font-size: 14px;
-    background: white;
-    border: none;
-    border-radius: 50px;
-    padding: 12.5px 25px 12.5px 25px;
-    position: absolute;
-    right: 6%;
-    top: 83%;
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12.5px 25px 12.5px 25px;
+  position: absolute;
+  right: 6%;
+  top: 83%;
 }
 
 .bloc_bouton {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 8%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
 }
 
 .bouton_noir {
-    font-family: "Roboto Bold";
-    font-size: 14px;
-    background: var(--Noir);
-    color: var(--Blanc);
-    border: none;
-    border-radius: 20px;
-    padding: 20px 25px 20px 25px;
-    font-weight: 300;
-    max-width: 230px;
-    line-height: 1.5;
-    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  background: var(--Noir);
+  color: var(--Blanc);
+  border: none;
+  border-radius: 20px;
+  padding: 20px 25px 20px 25px;
+  font-weight: 300;
+  max-width: 230px;
+  line-height: 1.5;
+  box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
-
-
-
 
 /* Contenus Blanc */
 
 .bloc_blanc {
-    z-index: -1;
-    position: relative;
-    background: #F7F7F7;
-    margin: 20px 1px 60px 15px;
-    padding: 8px 15px 10px 15px;
-    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    max-width: 85%;
+  z-index: -1;
+  position: relative;
+  background: #f7f7f7;
+  margin: 20px 1px 60px 15px;
+  padding: 8px 15px 10px 15px;
+  box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  max-width: 85%;
 }
 
 .bloc_blanc_frise {
-    background: #F7F7F7;
-    margin: 20px 15px 40px 40px;
-    padding: 0px 0px 10px 0px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    max-width: 85%;
-    border-radius: 25px 25px 25px 25px;
+  background: #f7f7f7;
+  margin: 20px 15px 40px 40px;
+  padding: 0px 0px 10px 0px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  max-width: 85%;
+  border-radius: 25px 25px 25px 25px;
 }
 
 .bloc_blanc_frise div {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 5px;
-    margin-top: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .bloc_blanc_frise img {
-    border-radius: 25px 25px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .index_text_article_blanc {
-    width: 69%;
-    background: var(--Blanc);
-    position: relative;
-    left: 7%;
-    padding: 2% 8% 4% 8%;
-    border-radius: 25px 25px 0px 0px;
+  width: 69%;
+  background: var(--Blanc);
+  position: relative;
+  left: 7%;
+  padding: 2% 8% 4% 8%;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .index_text_article_blanc p {
-    font-family: "Montserrat Regular";
-    font-size: 14px;
-    color: var(--Noir);
-    max-width: 100%;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  color: var(--Noir);
+  max-width: 100%;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .index_text_article_blanc h3 {
-    font-family: "Id Grotesk Trial";
-    font-size: 24px;
-    color: var(--Noir);
-    max-width: 100%;
-    line-height: 1.5;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-family: "Id Grotesk Trial";
+  font-size: 24px;
+  color: var(--Noir);
+  max-width: 100%;
+  line-height: 1.5;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .article_blanc {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .bouton_article_blanc {
-    font-family: "Roboto Bold";
-    font-size: 14px;
-    background: white;
-    border: none;
-    border-radius: 50px;
-    padding: 12.5px 25px 12.5px 25px;
-    position: absolute;
-    right: 6%;
-    top: 80%;
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12.5px 25px 12.5px 25px;
+  position: absolute;
+  right: 6%;
+  top: 80%;
 }
-
-
 
 /* Contenus succès échecs */
 
 .bloc_succès_échecs {
-    z-index: 1;
-    position: relative;
-    background: #F7F7F7;
-    margin: 20px 1px 60px 15px;
-    padding: 8px 15px 10px 15px;
-    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    max-width: 55%;
+  z-index: 1;
+  position: relative;
+  background: #f7f7f7;
+  margin: 20px 1px 60px 15px;
+  padding: 8px 15px 10px 15px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  max-width: 55%;
 }
 
 .bloc_interstellar {
-    z-index: 0;
-    position: relative;
-    width: 20%;
+  z-index: 0;
+  position: relative;
+  width: 20%;
 }
 .bloc_interstellar img {
-    width: 230px;
-    border-radius: 15px;
-    position: absolute;
-    margin-top: 230px;
-    left: -115px;
+  width: 230px;
+  border-radius: 15px;
+  position: absolute;
+  margin-top: 230px;
+  left: -115px;
 }
 
 .bloc_succès_échecs_et_interstellar {
-    display: flex;
+  display: flex;
 }
 
 /* Glossaire */
 
 .sous_titre_glossaire {
-    font-family: "ID Grotesk Trial";
-    font-size: 20px;
-    padding: 2% 5% 2% 5%;
-    text-decoration: underline;
-    font-weight: 200;
+  font-family: "ID Grotesk Trial";
+  font-size: 20px;
+  padding: 2% 5% 2% 5%;
+  text-decoration: underline;
+  font-weight: 200;
 }
 
 .index_image_article {
-    width: 85%;
-    height: auto;
-    position: relative;
-    left: 7.5%;
-    top: -2px;
+  width: 85%;
+  height: auto;
+  position: relative;
+  left: 7.5%;
+  top: -2px;
+}
+
+/* Filmographie */
+
+.index_image_article_filmographie {
+z-index: -1;
+  width: 88%;
+  height: auto;
+  position: relative;
+  left: 6%;
+  top: -2px;
+  margin-top: -20%;
+  box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 30px 30px;
+}
+
+.bloc_blanc_filmographie {
+  z-index: -1;
+  position: relative;
+  background: #f7f7f7;
+  margin: 20px 1px 60px 15px;
+  padding: 8px 15px 30px 15px;
+  box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 30px 30px 0px 0px;
+  max-width: 80%;
+  left: 2%;
+}
+
+.bouton_blanc_filmographie {
+  font-family: "Roboto Bold";
+  font-size: 14px;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12.5px 25px 12.5px 25px;
+  position: absolute;
+  right: 32%;
+  top: 50%;
+}
+
+.bloc_filmo_img {
+    z-index: -1;
+  position: relative;
+  margin-bottom: 5%;
 }
 
 /* Contact */
 
-.titre_contact{
-    z-index: 1;
-    position: relative;
-    font-family: "ID Grotesk Trial";
-    font-size: 16px;
-    margin-left: 30px;
+.titre_contact {
+  z-index: 1;
+  position: relative;
+  font-family: "ID Grotesk Trial";
+  font-size: 16px;
+  margin-left: 30px;
 }
 
-.case_contact{
-    z-index: 1;
-    position: relative;
-    width: 80%;
-    margin-left: 15px;
-    margin-top: 5px;
-    padding: 15px 15px 15px 15px;
-    border-radius: 12px;
-    border: 0.1px solid black;
+.case_contact {
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 15px 15px 15px 15px;
+  border-radius: 12px;
+  border: 0.1px solid black;
 }
 
-.case_contact_message{
-    z-index: 1;
-    position: relative;
-    width: 80%;
-    margin-left: 15px;
-    margin-top: 5px;
-    padding: 15px 15px 100px 15px;
-    border-radius: 12px;
-    border: 0.1px solid black;
+.case_contact_message {
+  z-index: 1;
+  position: relative;
+  width: 80%;
+  margin-left: 15px;
+  margin-top: 5px;
+  padding: 15px 15px 100px 15px;
+  border-radius: 12px;
+  border: 0.1px solid black;
 }
-
-
 
 /* A propos */
 
-.sous_titre_basique_a_propos{
-    font-family: "Montserrat Bold";
-    font-size: 20px;
-    padding: 2% 5% 2% 5%;
+.sous_titre_basique_a_propos {
+  font-family: "Montserrat Bold";
+  font-size: 20px;
+  padding: 2% 5% 2% 5%;
 }
 
-.sous_titre_basique_a_propos2{
-    font-family: "Montserrat Bold";
-    font-size: 20px;
-    padding: 2% 5% 2% 5%;
-    left: 60%;
-    padding-top: 2.2vh;
-    max-width: 30%;
-    position: relative;
+.sous_titre_basique_a_propos2 {
+  font-family: "Montserrat Bold";
+  font-size: 20px;
+  padding: 2% 5% 2% 5%;
+  left: 60%;
+  padding-top: 2.2vh;
+  max-width: 30%;
+  position: relative;
 }
 
-.bloc_a_propos{
-    margin-top: 6vh;
-    margin-bottom: 6vh;
+.bloc_a_propos {
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
-.paragraphe_a_propos{
-    font-family: "Montserrat Regular";
-    font-size: 14px;
-    line-height: 1.4;
-    z-index: 1;
-    position: relative;
-    background: #F7F7F7;
-    margin: 30px 20px 35px 15px;
-    padding: 25px 5px 15px 25px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    max-width: 85%;
+.paragraphe_a_propos {
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  line-height: 1.4;
+  z-index: 1;
+  position: relative;
+  background: #f7f7f7;
+  margin: 30px 20px 35px 15px;
+  padding: 25px 5px 15px 25px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  max-width: 85%;
 }
