@@ -46,7 +46,7 @@
         </div>
 
         <a href="/fr/index.html">
-          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.png" alt="">
+          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.webp" alt="">
         </a>
 
         <li class="menu_titre"><a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a></li>
@@ -62,7 +62,8 @@
         <p class="header_langue">FR</p>
 
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-          <img class="header_burger" src="/public/img/Menu_header_footer/header/menu_burger_blanc.png" alt="">
+          <img class="header_burger" x-show="!menuIsOpen" src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp" alt="">
+          <img class="header_burger" x-show="menuIsOpen" src="/public/img/Menu_header_footer/menu/Croix_blanche.webp" alt="">
         </button>
       </nav>
 
@@ -185,9 +186,9 @@
     <div class="footer_réseaux">
 
       <a href="https://www.youtube.com/@departementmmi4128"><img class="footer_yt"
-          src="/public/img/Menu_header_footer/footer/youtube_blanc.png" alt=""></a>
+          src="/public/img/Menu_header_footer/footer/youtube-blanc.webp" alt=""></a>
       <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer_insta"
-          src="/public/img/Menu_header_footer/footer/instagram_blanc.png" alt=""></a>
+          src="/public/img/Menu_header_footer/footer/instagram-blanc.webp" alt=""></a>
     </div>
 
     <div class="footer_source">
@@ -195,7 +196,7 @@
         pédagogique au département <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a></p>
 
       <a href="https://butmmi.thomasjeu.fr/#/">
-        <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.png" alt="">
+        <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp" alt="">
       </a>
     </div>
 
