@@ -13,8 +13,6 @@
 
   <header class="header_principal">
 
-
-
     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
       <ul class="no_space">
         <div class="div_lien">
@@ -46,7 +44,7 @@
         </div>
 
         <a href="/fr/index.html">
-          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.png" alt="">
+          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.webp" alt="">
         </a>
 
         <li class="menu_titre"><a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a></li>
@@ -55,12 +53,15 @@
     </nav>
     <nav class="header_nav">
 
-      <a href="/fr/index.html"><h1 class="header_titre">OppenInsights</h1></a>
+      <a href="/fr/index.html">
+        <h1 class="header_titre">OppenInsights</h1>
+      </a>
       <nav class="header_nav_secondaire">
         <p class="header_langue">FR</p>
 
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
-          <img class="header_burger" src="/public/img/Menu_header_footer/header/menu_burger_blanc.png" alt="">
+          <img class="header_burger" x-show="!menuIsOpen" src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp" alt="">
+          <img class="header_burger" x-show="menuIsOpen" src="/public/img/Menu_header_footer/menu/Croix_blanche.webp" alt="">
         </button>
       </nav>
 
