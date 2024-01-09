@@ -1,301 +1,231 @@
 <!DOCTYPE html>
 <html lang="en" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <title>Can You Hear The Music</title>
-  </head>
 
-  <body>
-    <header class="header_principal">
-      <nav
-        id="mainNav"
-        x-show="menuIsOpen"
-        x-transition.duration.600ms.origin.top
-        class="menu"
-      >
-        <div class="no_space">
-          <div class="div_lien">
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/le_film_oppenheimer.html" class="lien_menu"
-                  >Le film Oppenheimer</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/prise_de_conscience.html" class="lien_menu"
-                  >Prise de conscience de J. Robert Oppenheimer</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/american_prometheus.html" class="lien_menu"
-                  >American Prometheus</a
-                >
-              </p>
-              <p class="liste_menu_secondaire">
-                <a href="/en/livres_similaires.html" class="lien_menu"
-                  >Livres similaires</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/christopher_nolan.html" class="lien_menu"
-                  >Christopher Nolan</a
-                >
-              </p>
-              <p class="liste_menu_secondaire">
-                <a href="/en/filmographie.html" class="lien_menu"
-                  >Filmographie</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/can_you_hear_the_music.html" class="lien_menu"
-                  >Can You Hear The Music</a
-                >
-              </p>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <title>Can You Hear The Music</title>
+</head>
 
-          <div class="div_lien_gris">
-            <p class="liste_menu_gris">
-              <a href="/en/autres_projets.html" class="lien_menu_gris"
-                >Autres projets</a
-              >
+<body>
+  <header class="header_principal">
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
+      <div class="no_space">
+        <div class="div_lien">
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/le_film_oppenheimer.html" class="lien_menu">The Oppenheimer film</a>
             </p>
           </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/prise_de_conscience.html" class="lien_menu">J. Robert Oppenheimer’s awareness</a>
+            </p>
+          </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/american_prometheus.html" class="lien_menu">American Prometheus</a>
+            </p>
+            <p class="liste_menu_secondaire">
+              <a href="/en/livres_similaires.html" class="lien_menu">Similar books</a>
+            </p>
+          </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/christopher_nolan.html" class="lien_menu">Christopher Nolan</a>
+            </p>
+            <p class="liste_menu_secondaire">
+              <a href="/en/filmographie.html" class="lien_menu">Filmography</a>
+            </p>
+          </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/can_you_hear_the_music.html" class="lien_menu">Can You Hear The Music</a>
+            </p>
+          </div>
+        </div>
 
-          <a href="/en/index.html">
-            <img
-              class="menu_logo"
-              src="/public/img/Menu_header_footer/menu/logo_site_orange.webp"
-              alt=""
-            />
-          </a>
-
-          <p class="menu_titre">
-            <a href="/en/index.html" class="menu_titre_lien">OppenInsights</a>
+        <div class="div_lien_gris">
+          <p class="liste_menu_gris">
+            <a href="/en/autres_projets.html" class="lien_menu_gris">Other projects</a>
           </p>
         </div>
-      </nav>
-      <nav class="header_nav">
+
         <a href="/en/index.html">
-          <h2 class="header_titre">OppenInsights</h2>
+          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.webp" alt="logo site" />
         </a>
-        <nav class="header_nav_secondaire">
-          <a
-            href="/fr/can_you_hear_the_music.html"
-            class="header_langue"
-            onclick="document.cookie = 
+
+        <p class="menu_titre">
+          <a href="/en/index.html" class="menu_titre_lien">OppenInsights</a>
+        </p>
+      </div>
+    </nav>
+    <nav class="header_nav">
+      <a href="/en/index.html">
+        <h2 class="header_titre">OppenInsights</h2>
+      </a>
+      <nav class="header_nav_secondaire">
+        <a href="/fr/can_you_hear_the_music.html" class="header_langue" onclick="document.cookie = 
 `nf_lang=fr; path=/ ; SameSite=Strict`
-"
-            >EN</a
-          >
+">EN</a>
 
-          <button
-            aria-controls="mainNav"
-            @click="menuIsOpen = ! menuIsOpen"
-            class="header_menuBtn"
-          >
-            <img
-              class="header_burger"
-              x-show="!menuIsOpen"
-              src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp"
-              alt=""
-            >
-            <img
-              class="header_burger"
-              x-show="menuIsOpen"
-              src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
-              alt=""
-            >
-          </button>
-        </nav>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+          <img class="header_burger" x-show="!menuIsOpen"
+            src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp" alt="menu burger">
+          <img class="header_burger" x-show="menuIsOpen" src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
+            alt="croix">
+        </button>
       </nav>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <div class="img_top_pages_can_you_hear_the_music">
-        <h1 class="titre_top_pages">Can You Hear The Music</h1>
+  <main>
+    <div class="img_top_pages_can_you_hear_the_music">
+      <h1 class="titre_top_pages">Can You Hear The Music</h1>
+    </div>
+
+    <div class="bloc_intro_pages">
+      <div class="rond_orange_intro_pages"></div>
+      <p class="text_date_durée">
+        Published on 25/10, by Fabian Invernizzi, Reading time: 2 min
+      </p>
+      <h2 class="text_intro_pages_2l">Masterpiece by Ludwig Göransson</h2>
+    </div>
+
+    <h3 class="sous_titre_basique">A complex and emotive piece of music</h3>
+
+    <p class="paragraphe_basique">
+      Ludwig Göransson's composition, "Can You Hear The Music," was created for the film "Oppenheimer." This music,
+      which serves as a central theme in the film, is a complex and emotive piece that delves into the themes of
+      science,
+      destruction, and guilt.
+    </p>
+
+    <div class="accueil_orange_gauche"></div>
+
+    <p class="légende_img">Music</p>
+
+    <video width="100%" height="auto" controls>
+      <source src="/public/video/Trailer_Oppenheimer.mp4" type="video/mp4" />
+    </video>
+
+    <div class="accueil_orange_droite"></div>
+
+    <p class="paragraphe_basique">
+      The music begins with a simple and melodious tune, played by a piano and a violin. This melody is swiftly
+      accompanied by heavier instruments, like strings and brass, which create a darker and more menacing atmosphere.
+      As the music progresses, it becomes increasingly intricate, with instrument overlays and changes in tempo.
+
+    </p>
+
+    <h3 class="sous_titre_basique">Thèmes évoqués</h3>
+    <p class="paragraphe_basique">
+      The theme of science is ever-present in the music. The simple and melodious melody symbolizes the beauty of
+      science and its potential for good. The heavier instruments represent the dangers of science and its potential for
+      destruction.
+    </p>
+
+    <p class="paragraphe_basique">
+      The theme of destruction is also present in the music. The melody becomes progressively darker and more
+      menacing, as if foreshadowing the impending devastation.
+    </p>
+
+    <p class="paragraphe_basique">
+      Tempo changes represent the acceleration of events that
+      led to the atomic bomb. This tempo acceleration is akin to the sounds of a speeding train, seemingly unstoppable,
+      serving as a reminder that J. Robert Oppenheimer cannot turn back.
+    </p>
+
+    <img src="/public/img/Can_you_hear/music_train.webp" alt="Train" />
+
+    <p class="paragraphe_basique">
+      The theme of guilt is most explicit in the music. The title, "Can You Hear The Music," can be interpreted as a
+      question
+      posed by Robert Oppenheimer, the physicist who led the <u><a href="/en/glossaire.html">Manhattan Project</a></u>.
+      This question conveys Oppenheimer's
+      remorse for his role in the creation of the atomic bomb.
+    </p>
+
+    <h3 class="sous_titre_basique">Musical Analysis</h3>
+
+    <p class="paragraphe_basique">
+      "Can You Hear The Music" is a complex and emotive piece of music that delves into the themes of science,
+      destruction, and guilt. This music serves as a crucial element in the film "Oppenheimer" and contributes to
+      building
+      an atmosphere of tension and suspense.
+    </p>
+
+    <p class="paragraphe_basique">
+      The music is structured in three parts. The first part serves as an introduction, presenting the main melody. The
+      second part involves development, where the melody is explored in various ways. The third part acts as a
+      conclusion,
+      reaffirming the main melody.
+    </p>
+
+    <p class="paragraphe_basique">
+      The music employs a variety of instruments, including the piano, violin, strings, brass, and percussion. The piano
+      and
+      violin are utilized to play the main melody. Strings and brass are used to create a dark and menacing atmosphere.
+      Percussion is employed to add energy and dynamism to the music.
+    </p>
+  </main>
+
+  <footer class="footer_principal">
+    <div class="footer_rond_orange"></div>
+
+    <nav class="footer_contenus_informations">
+      <div class="footer_contenus">
+        <h4 class="footer_titre">Contents</h4>
+        <ul class="footer_contenus_liste">
+          <li>
+            <a class="footer_liste_lien" href="/en/a_propos.html">About</a>
+          </li>
+
+          <li>
+            <a class="footer_liste_lien" href="/en/contact.html">Contact</a>
+          </li>
+
+          <li>
+            <a class="footer_liste_lien" href="/en/glossaire.html">Glossary</a>
+          </li>
+
+          <li>
+            <a class="footer_liste_lien" href="/en/autres_projets.html">Other projects</a>
+          </li>
+        </ul>
       </div>
 
-      <div class="bloc_intro_pages">
-        <div class="rond_orange_intro_pages"></div>
-        <p class="text_date_durée">
-          Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 2 min
-        </p>
-        <h2 class="text_intro_pages_2l">Chef-d’œuvre de Ludwig Göransson</h2>
+      <div class="footer_informations">
+        <h4 class="footer_titre">Information</h4>
+        <ul class="footer_informations_liste">
+          <li>Fabian Invernizzi</li>
+          <li>MMI 1-A2</li>
+          <li>
+            <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <h3 class="sous_titre_basique">Une musique complexe et émouvante</h3>
+    <div class="footer_réseaux">
+      <a href="https://www.youtube.com/@departementmmi4128"><img class="footer_yt"
+          src="/public/img/Menu_header_footer/footer/youtube-blanc.webp" alt="logo youtube" /></a>
+      <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer_insta"
+          src="/public/img/Menu_header_footer/footer/instagram-blanc.webp" alt="logo instagram" /></a>
+    </div>
 
-      <p class="paragraphe_basique">
-        La musique "Can You Hear The Music" de Ludwig Göransson, a été composée
-        pour le film "Oppenheimer". Cette musique, qui est un thème principal du
-        film, est une pièce complexe et émouvante qui explore les thèmes de la
-        science, de la destruction et de la culpabilité.
+    <div class="footer_source">
+      <p class="footer_texte">
+        Project carried out as part of an educational exercise at the <a href="https://butmmi.thomasjeu.fr/#/"><u> MMI department in Montbéliard</u></a>.
       </p>
 
-      <div class="accueil_orange_gauche"></div>
+      <a href="https://butmmi.thomasjeu.fr/#/">
+        <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp" alt="logo MMI" />
+      </a>
+    </div>
+  </footer>
+</body>
 
-      <p class="légende_img">Musique</p>
-
-      <video width="100%" height="auto" controls>
-        <source src="/public/video/Trailer_Oppenheimer.mp4" type="video/mp4" />
-      </video>
-
-      <div class="accueil_orange_droite"></div>
-
-      <p class="paragraphe_basique">
-        La musique commence par une mélodie simple et harmonieuse, jouée par un
-        piano et un violon. Cette mélodie est rapidement rejointe par des
-        instruments plus lourds, tels que les cordes et les cuivres, qui créent
-        une atmosphère plus sombre et plus menaçante. Au fur et à mesure que la
-        musique progresse, elle devient de plus en plus complexe, avec des
-        superpositions d'instruments et des changements de tempo.
-      </p>
-
-      <h3 class="sous_titre_basique">Thèmes évoqués</h3>
-      <p class="paragraphe_basique">
-        Le thème de la science est omniprésent dans la musique. La mélodie
-        simple et harmonieuse représente la beauté de la science et son
-        potentiel pour le bien. Les instruments plus lourds représentent les
-        dangers de la science et son potentiel pour la destruction
-      </p>
-
-      <p class="paragraphe_basique">
-        Le thème de la destruction est également présent dans la musique. La
-        mélodie devient de plus en plus sombre et menaçante, comme pour présager
-        le massacre qui va suivre.
-      </p>
-
-      <p class="paragraphe_basique">
-        Les changements de tempo représentent l'accélération des événements qui
-        ont conduit à la bombe atomique. Cette accélération de tempo est
-        semblable aux bruits d’un train en pleine accélération qui semble
-        inarrêtable, rappelant ainsi que J. Robert Oppenheimer ne peut pas faire
-        demi-tour.
-      </p>
-
-      <img src="/public/img/Can_you_hear/music_train.webp" alt="" />
-
-      <p class="paragraphe_basique">
-        Le thème de la culpabilité est le plus explicite dans la musique. Le
-        titre, "Can You Hear The Music", peut être interprété comme une question
-        posée par Robert Oppenheimer, le physicien qui a dirigé le
-        <u><a href="/en/glossaire.html">projet Manhattan</a></u
-        >. Cette question exprime le regret d'Oppenheimer pour son rôle dans la
-        création de la bombe atomique.
-      </p>
-
-      <h3 class="sous_titre_basique">Analyse musicale</h3>
-
-      <p class="paragraphe_basique">
-        La musique "Can You Hear The Music" est une pièce complexe et émouvante
-        qui explore les thèmes de la science, de la destruction et de la
-        culpabilité. Cette musique est un élément essentiel du film
-        "Oppenheimer" et contribue à créer une atmosphère de tension et de
-        suspense
-      </p>
-
-      <p class="paragraphe_basique">
-        La musique est construite sur une structure en trois parties. La
-        première partie est une introduction, qui présente la mélodie
-        principale. La deuxième partie est un développement, qui explore la
-        mélodie de différentes manières. La troisième partie est une conclusion,
-        qui réaffirme la mélodie principale.
-      </p>
-
-      <p class="paragraphe_basique">
-        La musique utilise une variété d'instruments, dont le piano, le violon,
-        les cordes, les cuivres et les percussions. Le piano et le violon sont
-        utilisés pour jouer la mélodie principale. Les cordes et les cuivres
-        sont utilisés pour créer une atmosphère sombre et menaçante. Les
-        percussions sont utilisées pour ajouter de l'énergie et du dynamisme à
-        la musique.
-      </p>
-    </main>
-
-    <footer class="footer_principal">
-      <div class="footer_rond_orange"></div>
-
-      <nav class="footer_contenus_informations">
-        <div class="footer_contenus">
-          <h4 class="footer_titre">Contenus</h4>
-          <ul class="footer_contenus_liste">
-            <li>
-              <a class="footer_liste_lien" href="/en/a_propos.html">À propos</a>
-            </li>
-
-            <li>
-              <a class="footer_liste_lien" href="/en/contact.html">Contact</a>
-            </li>
-
-            <li>
-              <a class="footer_liste_lien" href="/en/glossaire.html"
-                >Glossaire</a
-              >
-            </li>
-
-            <li>
-              <a class="footer_liste_lien" href="/en/autres_projets.html"
-                >Autres projets</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer_informations">
-          <h4 class="footer_titre">Informations</h4>
-          <ul class="footer_informations_liste">
-            <li>Fabian Invernizzi</li>
-            <li>MMI 1-A2</li>
-            <li>
-              <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"
-                ><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="footer_réseaux">
-        <a href="https://www.youtube.com/@departementmmi4128"
-          ><img
-            class="footer_yt"
-            src="/public/img/Menu_header_footer/footer/youtube-blanc.webp"
-            alt=""
-        /></a>
-        <a href="https://www.instagram.com/mmi_montbeliard/"
-          ><img
-            class="footer_insta"
-            src="/public/img/Menu_header_footer/footer/instagram-blanc.webp"
-            alt=""
-        /></a>
-      </div>
-
-      <div class="footer_source">
-        <p class="footer_texte">
-          Projet réalisé dans le cadre d’un exercice pédagogique au département
-          <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a>
-        </p>
-
-        <a href="https://butmmi.thomasjeu.fr/#/">
-          <img
-            class="footer_MMI"
-            src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp"
-            alt=""
-          />
-        </a>
-      </div>
-    </footer>
-  </body>
 </html>
