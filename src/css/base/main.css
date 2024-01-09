@@ -478,7 +478,7 @@ z-index: -1;
 
 
 .article_autres_projets_seul {
-  z-index: -1;
+  z-index: 1;
   position: relative;
   background: #f7f7f7;
   margin: 20px 1px 10px 15px;
