@@ -55,6 +55,15 @@ img {
   line-height: 1.4;
 }
 
+.paragraphe_basique_centré {
+  font-family: "Montserrat Regular";
+  font-size: 14px;
+  margin-top: -10px;
+  padding: -0% 5% 2% 5%;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .sous_titre_basique {
   font-family: "Montserrat Bold";
   font-size: 20px;
