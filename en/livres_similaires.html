@@ -1,13 +1,314 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Livres similaires</h1>
-</body>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Livres similaires</title>
+  </head>
+
+  <body>
+    <header class="header_principal">
+      <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.600ms.origin.top
+        class="menu"
+      >
+        <div class="no_space">
+          <div class="div_lien">
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/le_film_oppenheimer.html" class="lien_menu"
+                  >Le film Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/prise_de_conscience.html" class="lien_menu"
+                  >Prise de conscience de J. Robert Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/american_prometheus.html" class="lien_menu"
+                  >American Prometheus</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/livres_similaires.html" class="lien_menu"
+                  >Livres similaires</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/christopher_nolan.html" class="lien_menu"
+                  >Christopher Nolan</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/filmographie.html" class="lien_menu"
+                  >Filmographie</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/can_you_hear_the_music.html" class="lien_menu"
+                  >Can You Hear The Music</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="div_lien_gris">
+            <p class="liste_menu_gris">
+              <a href="/fr/autres_projets.html" class="lien_menu_gris"
+                >Autres projets</a
+              >
+            </p>
+          </div>
+
+          <a href="/fr/index.html">
+            <img
+              class="menu_logo"
+              src="/public/img/Menu_header_footer/menu/logo_site_orange.webp"
+              alt=""
+            />
+          </a>
+
+          <p class="menu_titre">
+            <a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a>
+          </p>
+        </div>
+      </nav>
+      <nav class="header_nav">
+        <a href="/fr/index.html">
+          <h2 class="header_titre">OppenInsights</h2>
+        </a>
+        <nav class="header_nav_secondaire">
+          <a
+            href="/en/index.html"
+            class="header_langue"
+            onclick="document.cookie = 
+`nf_lang=fr; path=/ ; SameSite=Strict`
+"
+            >FR</a
+          >
+
+          <button
+            aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIsOpen"
+            class="header_menuBtn"
+          >
+            <img
+              class="header_burger"
+              x-show="!menuIsOpen"
+              src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp"
+              alt=""
+            />
+            <img
+              class="header_burger"
+              x-show="menuIsOpen"
+              src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
+              alt=""
+            />
+          </button>
+        </nav>
+      </nav>
+    </header>
+
+    <main>
+      <div class="img_top_pages_livres_similaires">
+        <h1 class="titre_top_pages">Livres similaires</h1>
+      </div>
+
+      <p class="text_date_durée">
+        Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 2 min
+      </p>
+
+      <h2 class="sous_titre_basique">
+        Dans la même thématique que American Prometheus, on peut retrouver les
+        livres suivants :
+      </h2>
+
+      <img class="frise" src="/public/img/Divers/Frise.webp" alt="" />
+
+      <div class="bloc_blanc_frise">
+        <img
+          src="/public/img/Livres_similaires/livre_similaire_a_world_destroyed.webp"
+          alt=""
+        />
+        <p class="frise_titre">
+          A World Destroyed: Hiroshima and the Origins of the Arms Race (1987)
+        </p>
+        <div>
+          <a href="https://www.amazon.com/World-Destroyed-Hiroshima-Origins-Arms/dp/039475204X" class="bouton_noir">Page Amazon</a>
+        </div>
+      </div>
+
+      <div class="accueil_orange_droite"></div>
+
+      <div class="bloc_blanc_frise">
+        <img
+          src="/public/img/Livres_similaires/livre_similaire_the_day_the_sun_rose.webp"
+          alt=""
+        />
+        <p class="frise_titre">
+          The Day the Sun Rose Twice de Richard Rhodes (1995)
+        </p>
+        <div>
+          <a href="https://www.amazon.com/Day-Sun-Rose-Twice-Explosion/dp/082630768X" class="bouton_noir">Page Amazon</a>
+        </div>
+      </div>
+
+      <div class="accueil_orange_droite"></div>
+
+      <div class="bloc_blanc_frise">
+        <img
+          src="/public/img/Livres_similaires/livre_similaire_the_second_world_war.webp"
+          alt=""
+        />
+        <p class="frise_titre">
+          The Second World War de Winston Churchill (2002)
+        </p>
+        <div>
+          <a href="https://www.amazon.fr/Second-World-War-Winston-Churchill/dp/0712667024" class="bouton_noir">Page Amazon</a>
+        </div>
+      </div>
+
+      <div class="accueil_orange_droite"></div>
+
+      <div class="bloc_blanc_frise">
+        <img
+          src="/public/img/Livres_similaires/livre_similaire_arsenal_of_folly.webp"
+          alt=""
+        />
+        <p class="frise_titre">
+          Arsenals of Folly : The Making of the Nuclear Arms Race (2007)
+        </p>
+        <div>
+          <a href="https://www.amazon.fr/Arsenals-Folly-Making-Nuclear-Arms/dp/0375713948" class="bouton_noir">Page Amazon</a>
+        </div>
+      </div>
+
+      <div class="accueil_orange_droite"></div>
+
+      <div class="bloc_blanc_frise">
+        <img
+          src="/public/img/Livres_similaires/livre_similaire_la_guerre_nucléaire.webp"
+          alt=""
+        />
+        <p class="frise_titre">La guerre nucléaire à pile ou face (2019)</p>
+        <div>
+          <a href="https://www.amazon.fr/guerre-nucl%C3%A9aire-%C3%A0-pile-face/dp/2343174199" class="bouton_noir">Page Amazon</a>
+        </div>
+      </div>
+
+      <div class="accueil_orange_droite"></div>
+
+      <div class="bloc_blanc_frise">
+        <img
+          src="/public/img/Livres_similaires/livre_similaire_ils_ont_tué_oppenheimer.webp"
+          alt=""
+        />
+        <p class="frise_titre">Ils ont tué Oppenheimer (2023)</p>
+        <div>
+          <a href="https://www.amazon.fr/gp/product/2072985773?ie=UTF8&tag=babelio-21&linkCode=as2&camp=1642&creative=6746&creativeASIN=2072985773" class="bouton_noir">Page Amazon</a>
+        </div>
+      </div>
+
+      <div class="accueil_orange_droite"></div>
+
+      <div class="bloc_blanc_frise">
+        <img
+          src="/public/img/Livres_similaires/livre_similaire_histoire_totale_de_la_seconde_guerre_mondiale.webp"
+          alt=""
+        />
+        <p class="frise_titre">
+          Histoire totale de la Seconde Guerre mondiale (2023)
+        </p>
+        <div>
+          <a href="https://www.amazon.fr/Histoire-totale-Seconde-Guerre-mondiale-ebook/dp/B0BZXYNSF6" class="bouton_noir">Page Amazon</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer_principal">
+      <div class="footer_rond_orange"></div>
+      <nav class="footer_contenus_informations">
+        <div class="footer_contenus">
+          <h4 class="footer_titre">Contenus</h4>
+          <ul class="footer_contenus_liste">
+            <li>
+              <a class="footer_liste_lien" href="/fr/a_propos.html">À propos</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/contact.html">Contact</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/glossaire.html"
+                >Glossaire</a
+              >
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/autres_projets.html"
+                >Autres projets</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_informations">
+          <h4 class="footer_titre">Informations</h4>
+          <ul class="footer_informations_liste">
+            <li>Fabian Invernizzi</li>
+            <li>MMI 1-A2</li>
+            <li>
+              <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"
+                ><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer_réseaux">
+        <a href="https://www.youtube.com/@departementmmi4128"
+          ><img
+            class="footer_yt"
+            src="/public/img/Menu_header_footer/footer/youtube-blanc.webp"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/mmi_montbeliard/"
+          ><img
+            class="footer_insta"
+            src="/public/img/Menu_header_footer/footer/instagram-blanc.webp"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="footer_source">
+        <p class="footer_texte">
+          Projet réalisé dans le cadre d’un exercice pédagogique au département
+          <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a>
+        </p>
+
+        <a href="https://butmmi.thomasjeu.fr/#/">
+          <img
+            class="footer_MMI"
+            src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

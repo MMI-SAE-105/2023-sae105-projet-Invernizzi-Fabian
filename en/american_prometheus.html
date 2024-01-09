@@ -1,13 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <title>American Prometheus</title>
 </head>
+
 <body>
-    <h1>American Prometheus</h1>
+
+    <header class="header_principal">
+
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
+          <div class="no_space">
+            <div class="div_lien">
+              <div class="menu_section">
+                <p class="liste_menu"><a href="/fr/le_film_oppenheimer.html" class="lien_menu">Le film Oppenheimer</a></p>
+              </div>
+              <div class="menu_section">
+                <p class="liste_menu"><a href="/fr/prise_de_conscience.html" class="lien_menu">Prise de conscience de J.
+                    Robert
+                    Oppenheimer</a></p>
+              </div>
+              <div class="menu_section">
+                <p class="liste_menu"><a href="/fr/american_prometheus.html" class="lien_menu">American Prometheus</a></p>
+                <p class="liste_menu_secondaire"><a href="/fr/livres_similaires.html" class="lien_menu">Livres
+                    similaires</a></p>
+              </div>
+              <div class="menu_section">
+                <p class="liste_menu"><a href="/fr/christopher_nolan.html" class="lien_menu">Christopher Nolan</a></p>
+                <p class="liste_menu_secondaire"><a href="/fr/filmographie.html" class="lien_menu">Filmographie</a></p>
+              </div>
+              <div class="menu_section">
+                <p class="liste_menu"><a href="/fr/can_you_hear_the_music.html" class="lien_menu">Can You Hear The
+                    Music</a></p>
+              </div>
+            </div>
+    
+            <div class="div_lien_gris">
+              <p class="liste_menu_gris"><a href="/fr/autres_projets.html" class="lien_menu_gris">Autres projets</a></p>
+            </div>
+    
+            <a href="/fr/index.html">
+              <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.webp" alt="">
+            </a>
+    
+            <p class="menu_titre"><a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a></p>
+    
+          </div>
+        </nav>
+        <nav class="header_nav">
+    
+          <a href="/fr/index.html">
+            <h2 class="header_titre">OppenInsights</h2>
+          </a>
+          <nav class="header_nav_secondaire">
+            <a
+            href="/en/index.html"
+            class="header_langue"
+            onclick="document.cookie = 
+`nf_lang=fr; path=/ ; SameSite=Strict`
+"
+            >FR</a
+          >
+    
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+              <img class="header_burger" x-show="!menuIsOpen" src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp" alt="">
+              <img class="header_burger" x-show="menuIsOpen" src="/public/img/Menu_header_footer/menu/Croix_blanche.webp" alt="">
+            </button>
+          </nav>
+    
+        </nav>
+    
+      </header>
+
+  <main>
+
+    <div class="img_top_pages_american_prometheus">
+      <h1 class="titre_top_pages">American Prometheus</h1>
+    </div>
+
+    <div class="bloc_intro_pages">
+      <div class="rond_orange_intro_pages"></div>
+      <p class="text_date_durée">Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 3 min </p>
+      <h2 class="text_intro_pages_2l">L’inspiration de Christopher Nolan</h2>
+    </div>
+
+    <p class="paragraphe_basique">« American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer » est une
+      biographie exhaustive du
+      physicien J. Robert Oppenheimer, écrite par Kai Bird et Martin J. Sherwin. Le livre, publié en 2005, a reçu
+      le prix Pulitzer de la biographie.</p>
+
+    <h3 class="sous_titre_basique">Contenu du livre</h3>
+
+    <p class="paragraphe_basique">Le livre retrace la vie d'Oppenheimer, de sa naissance en 1904 à sa mort en 1967. Il
+      examine sa carrière
+      scientifique, son rôle dans le <u><a href="/fr/glossaire.html">projet Manhattan</a></u> et son engagement pour le désarmement nucléaire.</p>
+
+    <p class="paragraphe_basique">Bird et Sherwin présentent un portrait nuancé d'Oppenheimer. Ils montrent qu'il était
+      un homme complexe et
+      contradictoire, un génie scientifique mais aussi un homme tourmenté par les conséquences de ses actions.</p>
+
+    <h3 class="sous_titre_basique">Les liens avec le film Oppenheimer</h3>
+
+    <p class="paragraphe_basique">Le film Oppenheimer de Christopher Nolan, sorti en 2023, est inspiré du livre «
+      American Prometheus ». Nolan
+      a déclaré qu'il s'est inspiré du livre pour créer un portrait nuancé et complexe d'Oppenheimer. </p>
+
+    <p class="paragraphe_basique">Le film s'inspire de plusieurs éléments du livre, notamment :</p>
+
+    <div class="bloc_blanc">
+
+      <h3 class="sous_titre_centré">Le personnage d'Oppenheimer</h3>
+
+      <p class="paragraphe_basique">Le film dépeint Oppenheimer comme un homme complexe et controversé. Il est un génie
+        scientifique, mais il est
+        également un homme tourmenté par la conscience de la destruction qu'il a contribué à créer. Ce portrait est
+        fidèle à la description d'Oppenheimer dans le livre.</p>
+
+      <figure>
+        <figcaption class="légende_img">J. Robert Oppenheimer</figcaption>
+        <img src="/public/img/American_prometheus/american_j.robert_oppenheimer.webp" alt="">
+      </figure>
+
+      <figure>
+        <figcaption class="légende_img">Cillian Murphy</figcaption>
+        <img src="/public/img/American_prometheus/american_cillian_murphy.webp" alt="">
+      </figure>
+
+    </div>
+
+    <div class="accueil_orange_gauche"></div>
+
+    <div class="bloc_blanc">
+
+      <h3 class="sous_titre_centré">Le projet Manhattan</h3>
+
+      <p class="paragraphe_basique">Le film retrace l'histoire du projet Manhattan, de sa conception à son exécution.
+        Nolan exploite des méthodes
+        de réalisation novatrices afin de restituer les événements liés au projet, incluant des effets spéciaux de
+        grande envergure et une utilisation considérable de la .</p>
+
+      <p class="paragraphe_basique">Ces approches offrent aux spectateurs une immersion totale dans le récit et une
+        appréhension plus complète de
+        la complexité du développement de l'arme atomique.</p>
+
+      <img src="/public/img/American_prometheus/american_bombe_atomique.webp" alt="">
+
+    </div>
+
+    <div class="accueil_orange_droite"></div>
+
+
+    <div class="bloc_blanc">
+
+      <h3 class="sous_titre_centré">Les bombardements d'Hiroshima et de Nagasaki</h3>
+
+      <p class="paragraphe_basique">Le film met en scène les bombardements d'Hiroshima et de Nagasaki , qui ont marqué
+        la fin de la Seconde
+        Guerre mondiale.</p>
+
+      <p class="paragraphe_basique">Nolan montre l'horreur de ces événements et leur impact sur Oppenheimer. Cette scène
+        est fidèle à la
+        description des bombardements dans le livre.</p>
+
+      <img src="/public/img/American_prometheus/american_bombardement.webp" alt="">
+
+    </div>
+
+    <p class="paragraphe_basique">« American Prometheus » est une biographie exhaustive et indispensable pour quiconque
+      s'intéresse à la vie et
+      l'œuvre de J. Robert Oppenheimer. Le livre est une source d'information précieuse pour comprendre l'un des
+      événements les plus importants du XXe siècle.</p>
+
+    <p class="paragraphe_basique">Le film Oppenheimer est une adaptation fidèle du livre. Nolan a réussi à créer un
+      portrait nuancé et complexe
+      d'Oppenheimer, qui est à la fois un génie scientifique et un homme tourmenté par la conscience de la
+      destruction qu'il a contribué à créer.</p>
+
+    <div class="bloc_bouton">
+      
+        <a class="bouton_noir" href="/fr/livres_similaires.html">Livres similaires</a>
+      
+    </div>
+
+    
+
+  </main>
+
+  <footer class="footer_principal">
+
+<div class="footer_rond_orange"></div>
+
+    <nav class="footer_contenus_informations">
+
+      <div class="footer_contenus">
+        <h4 class="footer_titre">Contenus</h4>
+        <ul class="footer_contenus_liste">
+          
+            <li><a class="footer_liste_lien" href="/fr/a_propos.html">À propos</a></li>  
+          
+            <li><a class="footer_liste_lien" href="/fr/contact.html">Contact</a></li>
+              
+            <li><a class="footer_liste_lien" href="/fr/glossaire.html">Glossaire</a></li>
+          
+            <li><a class="footer_liste_lien" href="/fr/autres_projets.html">Autres projets</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="footer_informations">
+        <h4 class="footer_titre">Informations</h4>
+        <ul class="footer_informations_liste">
+          <li>Fabian Invernizzi</li>
+          <li>MMI 1-A2</li>
+          <li><a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a></li>
+        </ul>
+      </div>
+
+    </nav>
+
+    <div class="footer_réseaux">
+
+      <a href="https://www.youtube.com/@departementmmi4128"><img class="footer_yt"
+          src="/public/img/Menu_header_footer/footer/youtube-blanc.webp" alt=""></a>
+      <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer_insta"
+          src="/public/img/Menu_header_footer/footer/instagram-blanc.webp" alt=""></a>
+    </div>
+
+    <div class="footer_source">
+      <p class="footer_texte">Projet réalisé dans le cadre d’un exercice
+        pédagogique au département <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a></p>
+
+      <a href="https://butmmi.thomasjeu.fr/#/">
+        <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp" alt="">
+      </a>
+    </div>
+
+  </footer>
+
 </body>
+
 </html>

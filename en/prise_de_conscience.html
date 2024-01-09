@@ -1,13 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Prise de conscience</h1>
-</body>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Prise de conscience de J. Robert Oppenheimer</title>
+  </head>
+
+  <body>
+    <header class="header_principal">
+      <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.600ms.origin.top
+        class="menu"
+      >
+        <div class="no_space">
+          <div class="div_lien">
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/le_film_oppenheimer.html" class="lien_menu"
+                  >Le film Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/prise_de_conscience.html" class="lien_menu"
+                  >Prise de conscience de J. Robert Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/american_prometheus.html" class="lien_menu"
+                  >American Prometheus</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/livres_similaires.html" class="lien_menu"
+                  >Livres similaires</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/christopher_nolan.html" class="lien_menu"
+                  >Christopher Nolan</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/filmographie.html" class="lien_menu"
+                  >Filmographie</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/can_you_hear_the_music.html" class="lien_menu"
+                  >Can You Hear The Music</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="div_lien_gris">
+            <p class="liste_menu_gris">
+              <a href="/fr/autres_projets.html" class="lien_menu_gris"
+                >Autres projets</a
+              >
+            </p>
+          </div>
+
+          <a href="/fr/index.html">
+            <img
+              class="menu_logo"
+              src="/public/img/Menu_header_footer/menu/logo_site_orange.webp"
+              alt=""
+            />
+          </a>
+
+          <p class="menu_titre">
+            <a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a>
+          </p>
+        </div>
+      </nav>
+      <nav class="header_nav">
+        <a href="/fr/index.html">
+          <h2 class="header_titre">OppenInsights</h2>
+        </a>
+        <nav class="header_nav_secondaire">
+          <a
+            href="/en/index.html"
+            class="header_langue"
+            onclick="document.cookie = 
+`nf_lang=fr; path=/ ; SameSite=Strict`
+"
+            >FR</a
+          >
+
+          <button
+            aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIsOpen"
+            class="header_menuBtn"
+          >
+            <img
+              class="header_burger"
+              x-show="!menuIsOpen"
+              src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp"
+              alt=""
+            />
+            <img
+              class="header_burger"
+              x-show="menuIsOpen"
+              src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
+              alt=""
+            />
+          </button>
+        </nav>
+      </nav>
+    </header>
+
+    <main>
+      <div class="img_top_pages_prise_de_conscience">
+        <h1 class="titre_top_pages">
+          Prise de conscience de J. Robert Oppenheimer
+        </h1>
+      </div>
+
+      <div class="bloc_intro_pages">
+        <div class="rond_orange_intro_pages"></div>
+        <p class="text_date_durée">
+          Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 2 min
+        </p>
+        <h2 class="text_intro_pages_1l">Contextualisation</h2>
+      </div>
+
+      <p class="paragraphe_basique">
+        J. Robert Oppenheimer est un personnage complexe et controversé. D'un
+        côté, il est considéré comme un génie scientifique qui a joué un rôle
+        crucial dans la victoire des Alliés pendant la Seconde Guerre mondiale.
+      </p>
+      <p class="paragraphe_basique">
+        De l'autre côté, il est souvent critiqué pour avoir été responsable de
+        la création de la bombe atomique, qui a causé la mort de centaines de
+        milliers de personnes.
+      </p>
+      <p class="paragraphe_basique">
+        La remise en question d'Oppenheimer commence dès la fin de la Seconde
+        Guerre mondiale. En effet, le physicien est conscient du pouvoir
+        destructeur de la bombe atomique, et il s'oppose à son utilisation. Il
+        est également conscient des risques de <u><a href="/fr/glossaire.html">prolifération nucléaire</a></u>,
+        et il s'engage à promouvoir le désarmement nucléaire.
+      </p>
+
+      <h3 class="sous_titre_basique">La remise en question d'Oppenheimer</h3>
+
+      <figure>
+        <img
+          src="/public/img/Prise_de_conscience/conscience_oppenheimer.webp"
+          alt=""
+        />
+        <figcaption class="légende_img">
+          Cillian Murphy - Oppenheimer
+        </figcaption>
+      </figure>
+
+      <p class="paragraphe_basique">
+        Cette remise en question est également visible dans le film Oppenheimer
+        de Christopher Nolan, sorti en 2023. Le film montre le physicien comme
+        un homme tourmenté par la conscience de la destruction qu'il a contribué
+        à créer. Il cite notamment le passage du Bhagavad-Gita "Now I am become
+        Death, the destroyer of worlds" pour exprimer son angoisse.
+      </p>
+
+      <p class="paragraphe_basique">
+        En effet, lors de l’essai nucléaire de Trinity, constatant ainsi
+        l’ampleur de la puissance de la bombe, J. Robert Oppenheimer s’est
+        tourné vers l’<u><a href="/fr/glossaire.html">hindouisme</a></u>. Bien qu’il ne soit jamais devenu hindou au sens
+        dévotionnel, Oppenheimer a trouvé que c’était une philosophie utile pour
+        structurer sa vie.
+      </p>
+
+      <h3 class="sous_titre_basique">Provenance de la Réplique</h3>
+
+      <p class="paragraphe_basique">
+        Cette citation est donc tirée du Bhagavad-Gita, un texte sacré hindou.
+        Elle est prononcée par le prince Arjuna, qui est confronté à la guerre.
+        La citation exprime la peur et le désespoir du prince, qui se rend
+        compte de la violence et de la destruction que la guerre va apporter.
+      </p>
+
+      <p class="paragraphe_basique">
+        Dans le cas d'Oppenheimer, la citation exprime sa propre peur et son
+        désespoir. Il est conscient du pouvoir destructeur de la bombe atomique,
+        et il sait que son invention va changer le monde à jamais.
+      </p>
+
+      <p class="paragraphe_basique">
+        La remise en question d'Oppenheimer est donc une reconsidération de la
+        science et de la technologie. Elle montre que la science peut être
+        utilisée pour le bien ou pour le mal. En effet, c’est un sujet complexe
+        et important. Elle nous oblige à réfléchir à la nature de la science, à
+        la responsabilité des scientifiques et aux conséquences de nos actions.
+      </p>
+
+      <p class="paragraphe_basique">
+        La citation "Now I am become Death, the destroyer of worlds" est un
+        moment important dans le film Oppenheimer. Elle montre la prise de
+        conscience d'Oppenheimer de la destruction qu'il a contribué à créer.
+        Cette citation est également un rappel de la responsabilité que nous
+        avons tous en tant que scientifiques et en tant qu'êtres humains.
+      </p>
+    </main>
+
+    <footer class="footer_principal">
+      <div class="footer_rond_orange"></div>
+      <nav class="footer_contenus_informations">
+        <div class="footer_contenus">
+          <h4 class="footer_titre">Contenus</h4>
+          <ul class="footer_contenus_liste">
+            <li>
+              <a class="footer_liste_lien" href="/fr/a_propos.html">À propos</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/contact.html">Contact</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/glossaire.html"
+                >Glossaire</a
+              >
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/autres_projets.html"
+                >Autres projets</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_informations">
+          <h4 class="footer_titre">Informations</h4>
+          <ul class="footer_informations_liste">
+            <li>Fabian Invernizzi</li>
+            <li>MMI 1-A2</li>
+            <li>
+              <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"
+                ><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer_réseaux">
+        <a href="https://www.youtube.com/@departementmmi4128"
+          ><img
+            class="footer_yt"
+            src="/public/img/Menu_header_footer/footer/youtube-blanc.webp"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/mmi_montbeliard/"
+          ><img
+            class="footer_insta"
+            src="/public/img/Menu_header_footer/footer/instagram-blanc.webp"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="footer_source">
+        <p class="footer_texte">
+          Projet réalisé dans le cadre d’un exercice pédagogique au département
+          <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a>
+        </p>
+
+        <a href="https://butmmi.thomasjeu.fr/#/">
+          <img
+            class="footer_MMI"
+            src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

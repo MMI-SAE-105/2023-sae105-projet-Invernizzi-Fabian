@@ -1,13 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Christopher Nolan</h1>
-</body>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Christopher Nolan</title>
+  </head>
+
+  <body>
+    <header class="header_principal">
+      <nav
+        id="mainNav"
+        x-show="menuIsOpen"
+        x-transition.duration.600ms.origin.top
+        class="menu"
+      >
+        <div class="no_space">
+          <div class="div_lien">
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/le_film_oppenheimer.html" class="lien_menu"
+                  >Le film Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/prise_de_conscience.html" class="lien_menu"
+                  >Prise de conscience de J. Robert Oppenheimer</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/american_prometheus.html" class="lien_menu"
+                  >American Prometheus</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/livres_similaires.html" class="lien_menu"
+                  >Livres similaires</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/christopher_nolan.html" class="lien_menu"
+                  >Christopher Nolan</a
+                >
+              </p>
+              <p class="liste_menu_secondaire">
+                <a href="/fr/filmographie.html" class="lien_menu"
+                  >Filmographie</a
+                >
+              </p>
+            </div>
+            <div class="menu_section">
+              <p class="liste_menu">
+                <a href="/fr/can_you_hear_the_music.html" class="lien_menu"
+                  >Can You Hear The Music</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="div_lien_gris">
+            <p class="liste_menu_gris">
+              <a href="/fr/autres_projets.html" class="lien_menu_gris"
+                >Autres projets</a
+              >
+            </p>
+          </div>
+
+          <a href="/fr/index.html">
+            <img
+              class="menu_logo"
+              src="/public/img/Menu_header_footer/menu/logo_site_orange.webp"
+              alt=""
+            />
+          </a>
+
+          <p class="menu_titre">
+            <a href="/fr/index.html" class="menu_titre_lien">OppenInsights</a>
+          </p>
+        </div>
+      </nav>
+      <nav class="header_nav">
+        <a href="/fr/index.html">
+          <h2 class="header_titre">OppenInsights</h2>
+        </a>
+        <nav class="header_nav_secondaire">
+          <a
+            href="/en/index.html"
+            class="header_langue"
+            onclick="document.cookie = 
+`nf_lang=fr; path=/ ; SameSite=Strict`
+"
+            >FR</a
+          >
+
+          <button
+            aria-controls="mainNav"
+            @click="menuIsOpen = ! menuIsOpen"
+            class="header_menuBtn"
+          >
+            <img
+              class="header_burger"
+              x-show="!menuIsOpen"
+              src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp"
+              alt=""
+            />
+            <img
+              class="header_burger"
+              x-show="menuIsOpen"
+              src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
+              alt=""
+            />
+          </button>
+        </nav>
+      </nav>
+    </header>
+
+    <main>
+      <div class="img_top_pages_christopher_nolan">
+        <h1 class="titre_top_pages">Christopher Nolan</h1>
+      </div>
+
+      <div class="bloc_intro_pages">
+        <div class="rond_orange_intro_pages"></div>
+        <p class="text_date_durée">
+          Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 2 min
+        </p>
+        <h2 class="text_intro_pages_1l">Biographie</h2>
+      </div>
+
+      <p class="paragraphe_basique">
+        Christopher Nolan est un réalisateur, scénariste, producteur et monteur
+        britannique-américain, né le 30 juillet 1970 à Westminster (Londres).
+        Nolan a grandi dans une famille de cinéastes. Son père, Brendan Nolan,
+        est un documentariste, et sa mère, Christina Nolan, est une monteuse. Il
+        a commencé à faire des films à l'âge de 16 ans, et il a étudié le cinéma
+        à l'Université de Westminster.
+      </p>
+
+      <p class="paragraphe_basique">
+        Après l'université, Nolan a réalisé plusieurs courts métrages, dont
+        "Following" (1998), un thriller indépendant qui a été acclamé par la
+        critique. Son premier succès commercial est venu en 2000 avec "Memento",
+        un thriller psychologique qui a été récompensé par l'Oscar du meilleur
+        scénario original. Maintenant, il est considéré comme l'un des cinéastes
+        les plus importants de sa génération, avec un style visuel et narratif
+        unique.
+      </p>
+
+      <div class="bloc_succès_échecs_et_interstellar">
+        <div class="bloc_succès_échecs">
+          <h3 class="sous_titre_basique">Succès et échecs</h3>
+
+          <p class="paragraphe_basique">
+            Nolan a ensuite réalisé une série de films à succès, dont "Batman
+            Begins" (2005), "The Dark Knight" (2008), "Inception" (2010),
+            "Interstellar" (2014), "Dunkirk" (2017) et "Oppenheimer" (2023). Ces
+            films ont été salués pour leur ambition, leur innovation et leur
+            réflexion sur des thèmes complexes.
+          </p>
+
+          <p class="paragraphe_basique">
+            Cependant, Nolan n'a pas toujours été épargné par les critiques. Son
+            film "Tenet" (2020) a été un échec commercial et critique, et il a
+            été critiqué pour sa complexité et son manque de clarté.
+          </p>
+        </div>
+
+        <div class="bloc_interstellar">
+          <img
+            class="christopher_nolan_interstellar"
+            src="/public/img/Christopher_Nolan/nolan_interstellar.webp"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <h3 class="sous_titre_basique">Style</h3>
+
+      <p class="paragraphe_basique">
+        Le style de Christopher Nolan est caractérisé par son utilisation de
+        techniques cinématographiques innovantes, telles que la narration non
+        linéaire, les effets visuels complexes et les plans larges et
+        panoramiques. Nolan est également connu pour son attention au détail et
+        son souci de la cohérence visuelle.
+      </p>
+
+      <p class="paragraphe_basique">
+        Les films de Christopher Nolan explorent souvent des thèmes complexes,
+        tels que la nature de la réalité, le temps, la mémoire et la
+        technologie. Nolan est un cinéaste engagé, qui utilise son art pour
+        explorer des questions importantes de la société.
+      </p>
+
+      <p class="paragraphe_basique">
+        De plus, il fait en sorte que chacun de ces films soient animés par des
+        musiques emblématiques. On y retrouve par exemple la bande-originale
+        d’Interstellar ou encore la bande-originale du film « The Dark Knight »,
+        tous les deux étant créés par Hans Zimmer.
+      </p>
+
+      <p class="paragraphe_basique">
+        Christopher Nolan est une figure majeure du cinéma contemporain. Son
+        travail a inspiré une nouvelle génération de cinéastes et a contribué à
+        faire évoluer le langage cinématographique.
+      </p>
+
+      <p class="paragraphe_basique">
+        Il est un cinéaste visionnaire qui a marqué l'histoire du cinéma. Son
+        travail est ambitieux, innovant et réfléchi, et il continue de fasciner
+        et d'inspirer les spectateurs du monde entier.
+      </p>
+
+      <div class="bloc_bouton">
+        <a href="/fr/filmographie.html" class="bouton_noir"
+          >Les autres chef-d'oeuvres de Christopher Nolan</a
+        >
+      </div>
+    </main>
+
+    <footer class="footer_principal">
+      <div class="footer_rond_orange"></div>
+
+      <nav class="footer_contenus_informations">
+        <div class="footer_contenus">
+          <h4 class="footer_titre">Contenus</h4>
+          <ul class="footer_contenus_liste">
+            <li>
+              <a class="footer_liste_lien" href="/fr/a_propos.html">À propos</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/contact.html">Contact</a>
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/glossaire.html"
+                >Glossaire</a
+              >
+            </li>
+
+            <li>
+              <a class="footer_liste_lien" href="/fr/autres_projets.html"
+                >Autres projets</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_informations">
+          <h4 class="footer_titre">Informations</h4>
+          <ul class="footer_informations_liste">
+            <li>Fabian Invernizzi</li>
+            <li>MMI 1-A2</li>
+            <li>
+              <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"
+                ><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer_réseaux">
+        <a href="https://www.youtube.com/@departementmmi4128"
+          ><img
+            class="footer_yt"
+            src="/public/img/Menu_header_footer/footer/youtube-blanc.webp"
+            alt=""
+        /></a>
+        <a href="https://www.instagram.com/mmi_montbeliard/"
+          ><img
+            class="footer_insta"
+            src="/public/img/Menu_header_footer/footer/instagram-blanc.webp"
+            alt=""
+        /></a>
+      </div>
+
+      <div class="footer_source">
+        <p class="footer_texte">
+          Projet réalisé dans le cadre d’un exercice pédagogique au département
+          <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a>
+        </p>
+
+        <a href="https://butmmi.thomasjeu.fr/#/">
+          <img
+            class="footer_MMI"
+            src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
