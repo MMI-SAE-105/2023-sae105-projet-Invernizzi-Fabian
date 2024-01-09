@@ -1,385 +1,303 @@
 <!DOCTYPE html>
 <html lang="en" x-data="{menuIsOpen : false}" :class="{noscroll:menuIsOpen,}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <title>OppenInsights</title>
-  </head>
 
-  <body>
-    <header class="header_principal">
-      <nav
-        id="mainNav"
-        x-show="menuIsOpen"
-        x-transition.duration.600ms.origin.top
-        class="menu"
-      >
-        <div class="no_space">
-          <div class="div_lien">
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/le_film_oppenheimer.html" class="lien_menu"
-                  >The Oppenheimer film</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/prise_de_conscience.html" class="lien_menu"
-                  >J. Robert Oppenheimer’s awareness</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/american_prometheus.html" class="lien_menu"
-                  >American Prometheus</a
-                >
-              </p>
-              <p class="liste_menu_secondaire">
-                <a href="/en/livres_similaires.html" class="lien_menu"
-                  >Similar books</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/christopher_nolan.html" class="lien_menu"
-                  >Christopher Nolan</a
-                >
-              </p>
-              <p class="liste_menu_secondaire">
-                <a href="/en/filmographie.html" class="lien_menu"
-                  >Filmography</a
-                >
-              </p>
-            </div>
-            <div class="menu_section">
-              <p class="liste_menu">
-                <a href="/en/can_you_hear_the_music.html" class="lien_menu"
-                  >Can You Hear The Music</a
-                >
-              </p>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script defer src="https://unpkg.com/alpinejs"></script>
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <title>OppenInsights</title>
+</head>
 
-          <div class="div_lien_gris">
-            <p class="liste_menu_gris">
-              <a href="/en/autres_projets.html" class="lien_menu_gris"
-                >Other projects</a
-              >
+<body>
+  <header class="header_principal">
+    <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.600ms.origin.top class="menu">
+      <div class="no_space">
+        <div class="div_lien">
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/le_film_oppenheimer.html" class="lien_menu">The Oppenheimer film</a>
             </p>
           </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/prise_de_conscience.html" class="lien_menu">J. Robert Oppenheimer’s awareness</a>
+            </p>
+          </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/american_prometheus.html" class="lien_menu">American Prometheus</a>
+            </p>
+            <p class="liste_menu_secondaire">
+              <a href="/en/livres_similaires.html" class="lien_menu">Similar books</a>
+            </p>
+          </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/christopher_nolan.html" class="lien_menu">Christopher Nolan</a>
+            </p>
+            <p class="liste_menu_secondaire">
+              <a href="/en/filmographie.html" class="lien_menu">Filmography</a>
+            </p>
+          </div>
+          <div class="menu_section">
+            <p class="liste_menu">
+              <a href="/en/can_you_hear_the_music.html" class="lien_menu">Can You Hear The Music</a>
+            </p>
+          </div>
+        </div>
 
-          <a href="/en/index.html">
-            <img
-              class="menu_logo"
-              src="/public/img/Menu_header_footer/menu/logo_site_orange.webp"
-              alt="logo site"
-            >
-          </a>
-
-          <p class="menu_titre">
-            <a href="/en/index.html" class="menu_titre_lien">OppenInsights</a>
+        <div class="div_lien_gris">
+          <p class="liste_menu_gris">
+            <a href="/en/autres_projets.html" class="lien_menu_gris">Other projects</a>
           </p>
         </div>
-      </nav>
-      <nav class="header_nav">
+
         <a href="/en/index.html">
-          <h2 class="header_titre">OppenInsights</h2>
+          <img class="menu_logo" src="/public/img/Menu_header_footer/menu/logo_site_orange.webp" alt="logo site">
         </a>
-        <nav class="header_nav_secondaire">
-          <a
-            href="/fr/index.html"
-            class="header_langue"
-            onclick="document.cookie = 
+
+        <p class="menu_titre">
+          <a href="/en/index.html" class="menu_titre_lien">OppenInsights</a>
+        </p>
+      </div>
+    </nav>
+    <nav class="header_nav">
+      <a href="/en/index.html">
+        <h2 class="header_titre">OppenInsights</h2>
+      </a>
+      <nav class="header_nav_secondaire">
+        <a href="/fr/index.html" class="header_langue" onclick="document.cookie = 
 `nf_lang=fr; path=/ ; SameSite=Strict`
-"
-            >EN</a
-          >
+">EN</a>
 
-          <button
-            aria-controls="mainNav"
-            @click="menuIsOpen = ! menuIsOpen"
-            class="header_menuBtn"
-          >
-            <img
-              class="header_burger"
-              x-show="!menuIsOpen"
-              src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp"
-              alt="menu burger"
-            >
-            <img
-              class="header_burger"
-              x-show="menuIsOpen"
-              src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
-              alt="Croix"
-            >
-          </button>
-        </nav>
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menuBtn">
+          <img class="header_burger" x-show="!menuIsOpen"
+            src="/public/img/Menu_header_footer/header/menu_burger_blanc.webp" alt="menu burger">
+          <img class="header_burger" x-show="menuIsOpen" src="/public/img/Menu_header_footer/menu/Croix_blanche.webp"
+            alt="Croix">
+        </button>
       </nav>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <div class="img_top_pages_index">
-        <h1 class="titre_top_pages"
-          >Now I am become Death, the destroyer of worlds</h1
-        >
+  <main>
+    <div class="img_top_pages_index">
+      <h1 class="titre_top_pages">Now I am become Death, the destroyer of worlds</h1>
+    </div>
+
+    <p class="text_date_durée">
+      Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 2 min
+    </p>
+
+    <h2 class="accueil_sous_titre">Bienvenue sur "OppenInsights" !</h2>
+
+    <div class="accueil_orange_gauche"></div>
+
+    <div class="accueil_intro">
+      <p>
+        Plongez dans l'univers fascinant de l'homme derrière l'histoire, le
+        film, et bien plus encore. Oppenheimer, un nom qui résonne dans le
+        monde du cinéma, de la science et de l'histoire.
+      </p>
+      <p>
+        Ici vous en découvrirez plus sur le film ainsi que sur la vie
+        incroyable de J. Robert Oppenheimer grâce aux différents articles
+        présents ci-dessous :
+      </p>
+    </div>
+
+    <article class="article_noir">
+      <div class="rond_orange_1"></div>
+      <div class="rond_orange_2"></div>
+      <div class="rond_orange_3"></div>
+      <div class="rond_orange_4"></div>
+
+      <div class="bloc_article_noir">
+        <div class="index_text_article_noir">
+          <h3>Le film Oppenheimer</h3>
+          <p>
+            Ce film retrace les années qui ont précédé et suivi la Seconde
+            Guerre mondiale par le prisme de la création de l’arme atomique dû
+            à J. Robert Oppenheimer.
+          </p>
+        </div>
+        <div class="index_image_article">
+          <img src="/public/img/Accueil/article_oppenheimer.webp" alt="" />
+
+          <a class="bouton_article_noir" href="/en/le_film_oppenheimer.html">Lire l'article</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="accueil_noir_droite"></div>
+
+    <article class="article_blanc">
+      <div class="rond_orange_5"></div>
+      <div class="rond_orange_6"></div>
+      <div class="rond_orange_7"></div>
+      <div class="rond_orange_8"></div>
+
+      <div class="bloc_article_blanc">
+        <div class="index_text_article_blanc">
+          <h3>Prise de conscience de J.Robert Oppenheimer</h3>
+          <p>Cette citation est un moment crucial dans le film Oppenheimer</p>
+          <p>
+            Elle montre la prise de conscience d’Oppenheimer de la destruction
+            qu'il a contribué à créer, ainsi que sur les conséquences que cela
+            a engendrer sur le le futur du monde.
+          </p>
+        </div>
+        <div class="index_image_article">
+          <img src="/public/img/Accueil/article_prise_de_conscience.webp" alt="" />
+
+          <a class="bouton_article_blanc" href="/en/prise_de_conscience.html">Lire l'article</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="accueil_noir_gauche"></div>
+
+    <article class="article_noir">
+      <div class="rond_orange_1"></div>
+      <div class="rond_orange_2"></div>
+      <div class="rond_orange_3"></div>
+      <div class="rond_orange_4"></div>
+
+      <div class="bloc_article_noir">
+        <div class="index_text_article_noir">
+          <h3>American Prometheus</h3>
+          <p>
+            Le livre retrace la vie d'Oppenheimer, de sa naissance en 1904 à
+            sa mort en 1967.
+          </p>
+          <p>
+            Il examine sa carrière scientifique, son rôle dans le projet
+            Manhattan et son engagement pour le désarmement nucléaire.
+          </p>
+        </div>
+        <div class="index_image_article">
+          <img src="/public/img/Accueil/article_american_prometheus.webp" alt="" />
+
+          <a class="bouton_article_noir" href="/en/le_film_oppenheimer.html">Lire l'article</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="accueil_noir_droite"></div>
+
+    <article class="article_blanc">
+      <div class="rond_orange_5"></div>
+      <div class="rond_orange_6"></div>
+      <div class="rond_orange_7"></div>
+      <div class="rond_orange_8"></div>
+
+      <div class="bloc_article_blanc">
+        <div class="index_text_article_blanc">
+          <h3>Christopher Nolan</h3>
+          <p>
+            Christopher Nolan est une figure majeure du cinéma contemporain.
+          </p>
+          <p>
+            Son travail a inspiré une nouvelle génération de cinéastes et a
+            contribué à faire évoluer le langage cinématographique.
+          </p>
+          <p>
+            Il est un cinéaste visionnaire qui a marqué l'histoire du cinéma.
+          </p>
+        </div>
+        <div class="index_image_article">
+          <img src="/public/img/Accueil/article_christopher_nolan.webp" alt="" />
+
+          <a class="bouton_article_blanc" href="/en/le_film_oppenheimer.html">Lire l'article</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="accueil_noir_gauche"></div>
+
+    <article class="article_noir">
+      <div class="rond_orange_1"></div>
+      <div class="rond_orange_2"></div>
+      <div class="rond_orange_3"></div>
+      <div class="rond_orange_4"></div>
+
+      <div class="bloc_article_noir">
+        <div class="index_text_article_noir">
+          <h3>Can You Hear The Music</h3>
+          <p>
+            La musique "Can You Hear The Music" de Ludwig Göransson, a été
+            composée spécialement pour le film "Oppenheimer".
+          </p>
+          <p>
+            Cette musique, qui est un thème principal du film, est une pièce
+            complexe et émouvante qui explore les thèmes de la science, de la
+            destruction et de la culpabilité.
+          </p>
+        </div>
+        <div class="index_image_article">
+          <img src="/public/img/Accueil/article_can_you_hear_the_music.webp" alt="" />
+
+          <a class="bouton_article_blanc" href="/en/le_film_oppenheimer.html">Lire l'article</a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer_principal">
+    <div class="footer_rond_orange"></div>
+    <nav class="footer_contenus_informations">
+      <div class="footer_contenus">
+        <h4 class="footer_titre">Contents</h4>
+        <ul class="footer_contenus_liste">
+          <li>
+            <a class="footer_liste_lien" href="/en/a_propos.html">About</a>
+          </li>
+
+          <li>
+            <a class="footer_liste_lien" href="/en/contact.html">Contact</a>
+          </li>
+
+          <li>
+            <a class="footer_liste_lien" href="/en/glossaire.html">Glossary</a>
+          </li>
+
+          <li>
+            <a class="footer_liste_lien" href="/en/autres_projets.html">Other projects</a>
+          </li>
+        </ul>
       </div>
 
-      <p class="text_date_durée">
-        Publié le 25 / 10, par Fabian Invernizzi, Temps de lecture : 2 min
+      <div class="footer_informations">
+        <h4 class="footer_titre">Information</h4>
+        <ul class="footer_informations_liste">
+          <li>Fabian Invernizzi</li>
+          <li>MMI 1-A2</li>
+          <li>
+            <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="footer_réseaux">
+      <a href="https://www.youtube.com/@departementmmi4128"><img class="footer_yt"
+          src="/public/img/Menu_header_footer/footer/youtube-blanc.webp" alt="logo youtube"></a>
+      <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer_insta"
+          src="/public/img/Menu_header_footer/footer/instagram-blanc.webp" alt="logo instagram"></a>
+    </div>
+
+    <div class="footer_source">
+      <p class="footer_texte">
+        Project carried out as part of an educational exercise at the <a href="https://butmmi.thomasjeu.fr/#/"><u> MMI
+            department in Montbéliard</u></a>.
       </p>
 
-      <h2 class="accueil_sous_titre">Bienvenue sur "OppenInsights" !</h2>
+      <a href="https://butmmi.thomasjeu.fr/#/">
+        <img class="footer_MMI" src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp" alt="logo MMI">
+      </a>
+    </div>
+  </footer>
+</body>
 
-      <div class="accueil_orange_gauche"></div>
-
-      <div class="accueil_intro">
-        <p>
-          Plongez dans l'univers fascinant de l'homme derrière l'histoire, le
-          film, et bien plus encore. Oppenheimer, un nom qui résonne dans le
-          monde du cinéma, de la science et de l'histoire.
-        </p>
-        <p>
-          Ici vous en découvrirez plus sur le film ainsi que sur la vie
-          incroyable de J. Robert Oppenheimer grâce aux différents articles
-          présents ci-dessous :
-        </p>
-      </div>
-
-      <article class="article_noir">
-        <div class="rond_orange_1"></div>
-        <div class="rond_orange_2"></div>
-        <div class="rond_orange_3"></div>
-        <div class="rond_orange_4"></div>
-
-        <div class="bloc_article_noir">
-          <div class="index_text_article_noir">
-            <h3>Le film Oppenheimer</h3>
-            <p>
-              Ce film retrace les années qui ont précédé et suivi la Seconde
-              Guerre mondiale par le prisme de la création de l’arme atomique dû
-              à J. Robert Oppenheimer.
-            </p>
-          </div>
-          <div class="index_image_article">
-            <img src="/public/img/Accueil/article_oppenheimer.webp" alt="" />
-
-            <a class="bouton_article_noir" href="/en/le_film_oppenheimer.html"
-              >Lire l'article</a
-            >
-          </div>
-        </div>
-      </article>
-
-      <div class="accueil_noir_droite"></div>
-
-      <article class="article_blanc">
-        <div class="rond_orange_5"></div>
-        <div class="rond_orange_6"></div>
-        <div class="rond_orange_7"></div>
-        <div class="rond_orange_8"></div>
-
-        <div class="bloc_article_blanc">
-          <div class="index_text_article_blanc">
-            <h3>Prise de conscience de J.Robert Oppenheimer</h3>
-            <p>Cette citation est un moment crucial dans le film Oppenheimer</p>
-            <p>
-              Elle montre la prise de conscience d’Oppenheimer de la destruction
-              qu'il a contribué à créer, ainsi que sur les conséquences que cela
-              a engendrer sur le le futur du monde.
-            </p>
-          </div>
-          <div class="index_image_article">
-            <img
-              src="/public/img/Accueil/article_prise_de_conscience.webp"
-              alt=""
-            />
-
-            <a class="bouton_article_blanc" href="/en/prise_de_conscience.html"
-              >Lire l'article</a
-            >
-          </div>
-        </div>
-      </article>
-
-      <div class="accueil_noir_gauche"></div>
-
-      <article class="article_noir">
-        <div class="rond_orange_1"></div>
-        <div class="rond_orange_2"></div>
-        <div class="rond_orange_3"></div>
-        <div class="rond_orange_4"></div>
-
-        <div class="bloc_article_noir">
-          <div class="index_text_article_noir">
-            <h3>American Prometheus</h3>
-            <p>
-              Le livre retrace la vie d'Oppenheimer, de sa naissance en 1904 à
-              sa mort en 1967.
-            </p>
-            <p>
-              Il examine sa carrière scientifique, son rôle dans le projet
-              Manhattan et son engagement pour le désarmement nucléaire.
-            </p>
-          </div>
-          <div class="index_image_article">
-            <img
-              src="/public/img/Accueil/article_american_prometheus.webp"
-              alt=""
-            />
-
-            <a class="bouton_article_noir" href="/en/le_film_oppenheimer.html"
-              >Lire l'article</a
-            >
-          </div>
-        </div>
-      </article>
-
-      <div class="accueil_noir_droite"></div>
-
-      <article class="article_blanc">
-        <div class="rond_orange_5"></div>
-        <div class="rond_orange_6"></div>
-        <div class="rond_orange_7"></div>
-        <div class="rond_orange_8"></div>
-
-        <div class="bloc_article_blanc">
-          <div class="index_text_article_blanc">
-            <h3>Christopher Nolan</h3>
-            <p>
-              Christopher Nolan est une figure majeure du cinéma contemporain.
-            </p>
-            <p>
-              Son travail a inspiré une nouvelle génération de cinéastes et a
-              contribué à faire évoluer le langage cinématographique.
-            </p>
-            <p>
-              Il est un cinéaste visionnaire qui a marqué l'histoire du cinéma.
-            </p>
-          </div>
-          <div class="index_image_article">
-            <img
-              src="/public/img/Accueil/article_christopher_nolan.webp"
-              alt=""
-            />
-
-            <a class="bouton_article_blanc" href="/en/le_film_oppenheimer.html"
-              >Lire l'article</a
-            >
-          </div>
-        </div>
-      </article>
-
-      <div class="accueil_noir_gauche"></div>
-
-      <article class="article_noir">
-        <div class="rond_orange_1"></div>
-        <div class="rond_orange_2"></div>
-        <div class="rond_orange_3"></div>
-        <div class="rond_orange_4"></div>
-
-        <div class="bloc_article_noir">
-          <div class="index_text_article_noir">
-            <h3>Can You Hear The Music</h3>
-            <p>
-              La musique "Can You Hear The Music" de Ludwig Göransson, a été
-              composée spécialement pour le film "Oppenheimer".
-            </p>
-            <p>
-              Cette musique, qui est un thème principal du film, est une pièce
-              complexe et émouvante qui explore les thèmes de la science, de la
-              destruction et de la culpabilité.
-            </p>
-          </div>
-          <div class="index_image_article">
-            <img
-              src="/public/img/Accueil/article_can_you_hear_the_music.webp"
-              alt=""
-            />
-
-            <a class="bouton_article_blanc" href="/en/le_film_oppenheimer.html"
-              >Lire l'article</a
-            >
-          </div>
-        </div>
-      </article>
-    </main>
-
-    <footer class="footer_principal">
-      <div class="footer_rond_orange"></div>
-      <nav class="footer_contenus_informations">
-        <div class="footer_contenus">
-          <h4 class="footer_titre">Contenus</h4>
-          <ul class="footer_contenus_liste">
-            <li>
-              <a class="footer_liste_lien" href="/en/a_propos.html">À propos</a>
-            </li>
-
-            <li>
-              <a class="footer_liste_lien" href="/en/contact.html">Contact</a>
-            </li>
-
-            <li>
-              <a class="footer_liste_lien" href="/en/glossaire.html"
-                >Glossaire</a
-              >
-            </li>
-
-            <li>
-              <a class="footer_liste_lien" href="/en/autres_projets.html"
-                >Autres projets</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer_informations">
-          <h4 class="footer_titre">Informations</h4>
-          <ul class="footer_informations_liste">
-            <li>Fabian Invernizzi</li>
-            <li>MMI 1-A2</li>
-            <li>
-              <a href="mailto:fabian.invernizzi@edu.univ-fcomte.fr"
-                ><u>fabian.invernizzi@edu.univ-fcomte.fr</u></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="footer_réseaux">
-        <a href="https://www.youtube.com/@departementmmi4128"
-          ><img
-            class="footer_yt"
-            src="/public/img/Menu_header_footer/footer/youtube-blanc.webp"
-            alt=""
-        /></a>
-        <a href="https://www.instagram.com/mmi_montbeliard/"
-          ><img
-            class="footer_insta"
-            src="/public/img/Menu_header_footer/footer/instagram-blanc.webp"
-            alt=""
-        /></a>
-      </div>
-
-      <div class="footer_source">
-        <p class="footer_texte">
-          Projet réalisé dans le cadre d’un exercice pédagogique au département
-          <a href="https://butmmi.thomasjeu.fr/#/"><u>MMI de Montbéliard</u></a>
-        </p>
-
-        <a href="https://butmmi.thomasjeu.fr/#/">
-          <img
-            class="footer_MMI"
-            src="/public/img/Menu_header_footer/footer/logo_mmi_blanc.webp"
-            alt=""
-          />
-        </a>
-      </div>
-    </footer>
-  </body>
 </html>
