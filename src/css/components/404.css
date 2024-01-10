@@ -16,7 +16,7 @@
 .bouton_404 {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: var(--Orange);
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -25,5 +25,5 @@
 }
 
 .bouton_404:hover {
-    background-color: #0056b3;
+    background-color: var(--Orange);
 }
